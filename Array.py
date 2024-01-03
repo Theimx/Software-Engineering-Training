@@ -145,3 +145,16 @@ indice_objet_a_lire = int(input("Entrez l'indice de l'objet à lire : "))
 
 valeur_lue = get_cells(nom_tableau, indice_liste_a_lire, indice_objet_a_lire, resultat)
 print(valeur_lue)
+
+tableau_test = CreateArray(3, "test_tableau", 5)
+
+# Ajout d'éléments spécifiques dans différentes listes du tableau
+ajout("A", 0, 2, "test_tableau", tableau_test)
+ajout("B", 1, 2, "test_tableau", tableau_test)
+ajout("C", 2, 2, "test_tableau", tableau_test)
+ajout("D", 0, 3, "test_tableau", tableau_test)
+ajout("E", 1, 3, "test_tableau", tableau_test)
+ajout("F", 2, 3, "test_tableau", tableau_test)
+
+# Appel de get_coll pour récupérer les éléments à la position 2 dans chaque liste du tableau
+elements_position_2 = get_coll("test_tableau", 2, tableau_test)
