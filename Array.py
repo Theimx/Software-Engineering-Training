@@ -28,13 +28,23 @@ def ajout(element, indice_liste, indice_objet, tableau_name, tableau):
     else:
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
 
-# Fonction pour afficher le tableau avec les cellules vides représentées par '#'
+# Fonction pour afficher le tableau avec un espacement égal pour tous les éléments
 def afficher_tableau(tableau):
+    max_length = 0  # Longueur maximale des éléments dans le tableau
+    for key, value in tableau.items():
+        for liste in value:
+            for cellule in liste:
+                cellule_length = len(str(cellule))
+                if cellule_length > max_length:
+                    max_length = cellule_length
+
     for key, value in tableau.items():
         print(f"{key}:")
         for liste in value:
             for cellule in liste:
-                print(cellule, end=" ")
+                cellule_str = str(cellule)
+                espacement = " " * ((max_length - len(cellule_str)) // 2)
+                print(f"{espacement}{cellule_str}{espacement}", end=" ")
             print()
         print()
 
@@ -51,5 +61,13 @@ indice_liste_a_modifier = int(input("Entrez l'indice de la liste où ajouter l'�
 indice_objet_a_modifier = int(input("Entrez l'indice de l'objet où ajouter l'élément : "))
 
 ajout(element_a_ajouter, indice_liste_a_modifier, indice_objet_a_modifier, nom_tableau, resultat)
+print("\nTableau après ajout:")
+afficher_tableau(resultat)
+
+element_a_ajouter = input("Entrez l'élément à ajouter : ")
+indice_liste_a_modifierbis = int(input("Entrez l'indice de la liste où ajouter l'élément : "))
+indice_objet_a_modifierbis = int(input("Entrez l'indice de l'objet où ajouter l'élément : "))
+
+ajout(element_a_ajouter, indice_liste_a_modifierbis, indice_objet_a_modifierbis, nom_tableau, resultat)
 print("\nTableau après ajout:")
 afficher_tableau(resultat)
