@@ -52,13 +52,23 @@ def del_row(indice_liste, tableau_name, tableau):
     else:
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
 
-def get_row(indice_liste, tableau_name, tableau):
+def get_row(indice_liste, tableau_name, tableau, exclude_empty=False):
     if tableau_name in tableau:
         if indice_liste < len(tableau[tableau_name]):
-            return [cellule.value for cellule in tableau[tableau_name][indice_liste]]
+            if exclude_empty:
+                return [cellule.value for cellule in tableau[tableau_name][indice_liste] if cellule.value is not None]
+            else:
+                return [cellule.value for cellule in tableau[tableau_name][indice_liste]]
         else:
             print(f"L'indice de liste spécifié est hors de la plage de '{tableau_name}'.")
             return []
+    else:
+        print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
+        return []
+
+def get_coll(tableau_name, n, tableau):
+    if tableau_name in tableau:
+        return [liste[n].value for liste in tableau[tableau_name] if n < len(liste)]
     else:
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
         return []
@@ -124,6 +134,11 @@ indice_liste_a_recuperer = int(input("Entrez l'indice de la liste à récupérer
 liste_recuperee = get_row(indice_liste_a_recuperer, nom_tableau, resultat)
 print(f"\nListe récupérée de '{nom_tableau}[{indice_liste_a_recuperer}]':")
 print(liste_recuperee)
+
+indice_liste_a_recupererbis = int(input("Entrez l'indice de la liste à récupérer : "))
+liste_recupereebis = get_row(indice_liste_a_recupererbis, nom_tableau, resultat,exclude_empty=True)
+print(f"\nListe récupérée de '{nom_tableau}[{indice_liste_a_recupererbis}]':")
+print(liste_recupereebis)
 
 indice_liste_a_lire = int(input("Entrez l'indice de la liste à lire : "))
 indice_objet_a_lire = int(input("Entrez l'indice de l'objet à lire : "))
