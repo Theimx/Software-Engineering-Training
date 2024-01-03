@@ -63,6 +63,21 @@ def get_row(indice_liste, tableau_name, tableau):
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
         return []
 
+def get_cells(tableau_name, indice_liste, indice_objet, tableau):
+    if tableau_name in tableau:
+        if indice_liste < len(tableau[tableau_name]):
+            if indice_objet < len(tableau[tableau_name][indice_liste]):
+                return tableau[tableau_name][indice_liste][indice_objet].value
+            else:
+                print(f"L'indice d'objet spécifié est hors de la plage de '{tableau_name}[{indice_liste}]'.")
+                return None
+        else:
+            print(f"L'indice de liste spécifié est hors de la plage de '{tableau_name}'.")
+            return None
+    else:
+        print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
+        return None
+
 # Fonction pour afficher le tableau avec un espacement égal pour tous les éléments
 def afficher_tableau(tableau):
     max_length = 0  # Longueur maximale des éléments dans le tableau
@@ -99,13 +114,19 @@ ajout(element_a_ajouter, indice_liste_a_modifier, indice_objet_a_modifier, nom_t
 print("\nTableau après ajout:")
 afficher_tableau(resultat)
 
-indice_liste_a_vider = int(input("Entrez l'indice de la liste à vider : "))
+#indice_liste_a_vider = int(input("Entrez l'indice de la liste à vider : "))
 
-del_row(indice_liste_a_vider, nom_tableau, resultat)
-print("\nTableau après suppression de la liste spécifiée :")
-afficher_tableau(resultat)
+#del_row(indice_liste_a_vider, nom_tableau, resultat)
+#print("\nTableau après suppression de la liste spécifiée :")
+#afficher_tableau(resultat)
 
 indice_liste_a_recuperer = int(input("Entrez l'indice de la liste à récupérer : "))
 liste_recuperee = get_row(indice_liste_a_recuperer, nom_tableau, resultat)
 print(f"\nListe récupérée de '{nom_tableau}[{indice_liste_a_recuperer}]':")
 print(liste_recuperee)
+
+indice_liste_a_lire = int(input("Entrez l'indice de la liste à lire : "))
+indice_objet_a_lire = int(input("Entrez l'indice de l'objet à lire : "))
+
+valeur_lue = get_cells(nom_tableau, indice_liste_a_lire, indice_objet_a_lire, resultat)
+print(valeur_lue)
