@@ -41,6 +41,17 @@ def del_cells(indice_liste, indice_objet, tableau_name, tableau):
     else:
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
 
+def del_row(indice_liste, tableau_name, tableau):
+    if tableau_name in tableau:
+        if indice_liste < len(tableau[tableau_name]):
+            for cellule in tableau[tableau_name][indice_liste]:
+                cellule.value = None
+            print(f"La liste {indice_liste} de '{tableau_name}' a été vidée.")
+        else:
+            print(f"L'indice de liste spécifié est hors de la plage de '{tableau_name}'.")
+    else:
+        print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
+
 # Fonction pour afficher le tableau avec un espacement égal pour tous les éléments
 def afficher_tableau(tableau):
     max_length = 0  # Longueur maximale des éléments dans le tableau
@@ -77,9 +88,16 @@ ajout(element_a_ajouter, indice_liste_a_modifier, indice_objet_a_modifier, nom_t
 print("\nTableau après ajout:")
 afficher_tableau(resultat)
 
-indice_liste_a_vider = int(input("Entrez l'indice de la liste à vider : "))
-indice_objet_a_vider = int(input("Entrez l'indice de l'objet à vider : "))
+element_a_ajouter = input("Entrez l'élément à ajouter : ")
+indice_liste_a_modifierbis = int(input("Entrez l'indice de la liste où ajouter l'élément : "))
+indice_objet_a_modifierbis = int(input("Entrez l'indice de l'objet où ajouter l'élément : "))
 
-del_cells(indice_liste_a_vider, indice_objet_a_vider, nom_tableau, resultat)
-print("\nTableau après suppression de la cellule spécifiée :")
+ajout(element_a_ajouter, indice_liste_a_modifierbis, indice_objet_a_modifierbis, nom_tableau, resultat)
+print("\nTableau après ajout:")
+afficher_tableau(resultat)
+
+indice_liste_a_vider = int(input("Entrez l'indice de la liste à vider : "))
+
+del_row(indice_liste_a_vider, nom_tableau, resultat)
+print("\nTableau après suppression de la liste spécifiée :")
 afficher_tableau(resultat)
