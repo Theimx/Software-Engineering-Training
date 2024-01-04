@@ -124,11 +124,6 @@ ajout(element_a_ajouter, indice_liste_a_modifier, indice_objet_a_modifier, nom_t
 print("\nTableau après ajout:")
 afficher_tableau(resultat)
 
-#indice_liste_a_vider = int(input("Entrez l'indice de la liste à vider : "))
-
-#del_row(indice_liste_a_vider, nom_tableau, resultat)
-#print("\nTableau après suppression de la liste spécifiée :")
-#afficher_tableau(resultat)
 
 indice_liste_a_recuperer = int(input("Entrez l'indice de la liste à récupérer : "))
 liste_recuperee = get_row(indice_liste_a_recuperer, nom_tableau, resultat)
@@ -146,15 +141,12 @@ indice_objet_a_lire = int(input("Entrez l'indice de l'objet à lire : "))
 valeur_lue = get_cells(nom_tableau, indice_liste_a_lire, indice_objet_a_lire, resultat)
 print(valeur_lue)
 
-tableau_test = CreateArray(3, "test_tableau", 5)
+coll_test1 = int(input("Entrez l'indice de la liste à lire : "))
+coll_test = get_coll(nom_tableau,coll_test1, resultat)
+print(coll_test)
 
-# Ajout d'éléments spécifiques dans différentes listes du tableau
-ajout("A", 0, 2, "test_tableau", tableau_test)
-ajout("B", 1, 2, "test_tableau", tableau_test)
-ajout("C", 2, 2, "test_tableau", tableau_test)
-ajout("D", 0, 3, "test_tableau", tableau_test)
-ajout("E", 1, 3, "test_tableau", tableau_test)
-ajout("F", 2, 3, "test_tableau", tableau_test)
+indice_liste_a_vider = int(input("Entrez l'indice de la liste à vider : "))
 
-# Appel de get_coll pour récupérer les éléments à la position 2 dans chaque liste du tableau
-elements_position_2 = get_coll("test_tableau", 2, tableau_test)
+del_row(indice_liste_a_vider, nom_tableau, resultat)
+print("\nTableau après suppression de la liste spécifiée :")
+afficher_tableau(resultat)
