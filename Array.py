@@ -15,7 +15,7 @@ def CreateArray(n, name, nb_line):
         tableau[name].append(nouvelle_liste)  # Ajoute la nouvelle liste à 'tableau'
     return tableau
 
-def ajout(element, indice_liste, indice_objet, tableau_name, tableau):
+def ad_cell(element, indice_liste, indice_objet, tableau_name, tableau):
     if tableau_name in tableau:
         if indice_liste < len(tableau[tableau_name]):
             if indice_objet < len(tableau[tableau_name][indice_liste]):
@@ -28,7 +28,7 @@ def ajout(element, indice_liste, indice_objet, tableau_name, tableau):
     else:
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
 
-def del_cells(indice_liste, indice_objet, tableau_name, tableau):
+def del_cell(indice_liste, indice_objet, tableau_name, tableau):
     if tableau_name in tableau:
         if indice_liste < len(tableau[tableau_name]):
             if indice_objet < len(tableau[tableau_name][indice_liste]):
@@ -88,6 +88,15 @@ def get_cells(tableau_name, indice_liste, indice_objet, tableau):
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
         return None
 
+def del_coll(n, tableau_name, tableau):
+    if tableau_name in tableau:
+        for liste in tableau[tableau_name]:
+            if n < len(liste):
+                liste[n].value = None
+            else:
+                print(f"L'indice de colonne spécifié est hors de la plage de '{tableau_name}'.")
+    else:
+        print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
 # Fonction pour afficher le tableau avec un espacement égal pour tous les éléments
 def afficher_tableau(tableau):
     max_length = 0  # Longueur maximale des éléments dans le tableau
@@ -120,7 +129,7 @@ element_a_ajouter = input("Entrez l'élément à ajouter : ")
 indice_liste_a_modifier = int(input("Entrez l'indice de la liste où ajouter l'élément : "))
 indice_objet_a_modifier = int(input("Entrez l'indice de l'objet où ajouter l'élément : "))
 
-ajout(element_a_ajouter, indice_liste_a_modifier, indice_objet_a_modifier, nom_tableau, resultat)
+ad_cell(element_a_ajouter, indice_liste_a_modifier, indice_objet_a_modifier, nom_tableau, resultat)
 print("\nTableau après ajout:")
 afficher_tableau(resultat)
 
