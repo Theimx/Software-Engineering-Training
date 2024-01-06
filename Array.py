@@ -97,7 +97,7 @@ def del_coll(n, tableau_name, tableau):
                 print(f"L'indice de colonne spécifié est hors de la plage de '{tableau_name}'.")
     else:
         print(f"Le nom '{tableau_name}' n'existe pas dans le tableau.")
-# Fonction pour afficher le tableau avec un espacement égal pour tous les éléments
+
 def afficher_tableau(tableau):
     max_length = 0  # Longueur maximale des éléments dans le tableau
     for key, value in tableau.items():
