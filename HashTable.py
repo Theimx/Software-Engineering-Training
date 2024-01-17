@@ -133,17 +133,17 @@ def first_hash_function(a):
     index = sum(value) / len(a)
     return(int(index))
 
-def second_hash_function(a):
+def second_hash_function(a, table_size=101):
     index = 0
     for char in a:
-        index = (index * 31 + ord(char)) % 101
+        index = (index * 31 + ord(char)) % table_size
     return index
 
-def third_hash_function(a):
+def third_hash_function(a, table_size=101):
     index = 0
     prime = 17
     for char in a:
         index = (index + ord(char)) * prime
-    return index
+    return index % table_size
 
 print(first_hash_function("Test"), " ", second_hash_function("Test"), " ",third_hash_function("Test",))
