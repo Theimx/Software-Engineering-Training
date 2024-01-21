@@ -146,4 +146,30 @@ def third_hash_function(a, table_size=101):
         index = (index + ord(char)) * prime
     return index % table_size
 
-print(first_hash_function("Test"), " ", second_hash_function("Test"), " ",third_hash_function("Test",))
+def create_table(n, name, nb_line, HashFunction):
+    hash_table = {name: []}  # Initialise la liste principale avec un nom donné
+    for _ in range(n):
+        nouvelle_liste = [EmptyCell() for _ in range(nb_line)]  # Crée une liste avec des objets EmptyCell
+        hash_table[name].append(nouvelle_liste)  # Ajoute la nouvelle liste à 'hash_table'
+        
+        # Applique la fonction de hachage à chaque élément de la nouvelle liste
+        for cellule in nouvelle_liste:
+            cellule.value = HashFunction(cellule.value)
+
+    return hash_table
+
+def ad_table(element, table_name, HashFunction, hash_table):
+    if table_name in hash_table:
+        index = HashFunction(element, len(hash_table[table_name]))
+        if index < len(hash_table[table_name]):
+            empty_cell = EmptyCell(value=element)
+            hash_table[table_name][index][0] = empty_cell
+            print(f"L'élément '{element}' a été ajouté à la position {index} de '{table_name}'.")
+        else:
+            print(f"L'indice obtenu après hachage est hors de la plage de '{table_name}'.")
+    else:
+        print(f"Le nom '{table_name}' n'existe pas dans le hash_table.")
+
+hash_table_test = create_table(5, "table", 3, first_hash_function)
+
+ad_table("example_string", "table", first_hash_function, hash_table_test)
