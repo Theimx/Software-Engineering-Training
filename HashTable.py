@@ -4,7 +4,7 @@ class HashTable:
         self.num_columns = num_columns
         self.num_places_per_column = num_places_per_column
         self.hash_table = {}
-
+ 
     def create_table(self):
         for column in range(self.num_columns):
             column_name = f"Column_{column + 1}"
