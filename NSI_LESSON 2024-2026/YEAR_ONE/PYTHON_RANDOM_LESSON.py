@@ -30,4 +30,3 @@ def cartevital():
     _securiteSocial = int(_securiteSocial)
     return _securiteSocial
 
-cartevital()
