@@ -27,9 +27,18 @@ def cartevital():
                 _departement = int(input("entrez le numero de votre departement de naissance ou 99 si vous êtes née a l'etranger : "))
 
                 if _departement < 99 or _departement > 0:
-                    _code1 = random.randint(0,999)
-                    _code2 = random.randint(0,999)
+
+                    _code1 = random.randint(100,999)
+                    _code2 = random.randint(100,999)
+                    if _annaissance <= 9 : 
+                        _annaissance = '0' + str(_annaissance)
+                    if _moisnaissance <= 9 : 
+                        _moisnaissance = '0' + str(_moisnaissance)
+                    if _departement <= 9 : 
+                        _departement = '0' + str(_departement)
+
                     _securiteSocial = str(_sexe)  + str(_annaissance)  + str(_moisnaissance) + str(_departement)  + str(_code1) + str(_code2)
+                    int(_securiteSocial)
                     print(_securiteSocial)
 
                     _securiteSocial = int(_securiteSocial)
@@ -43,5 +52,9 @@ def cartevital():
     else : 
         cartevital()
 
+#a refaire avec les boucles while 
+def cartevitalboucle(): 
+    _result = 0
+    return _result
 
 cartevital()
