@@ -11,7 +11,6 @@ def exo1():
    bas()
    droite()
 
-
 #Exo 2
 def exo2(): 
    for i in range(20):
@@ -21,7 +20,6 @@ def exo2():
       deposer()
       for y in range(15):
          gauche()
-
 
 #Exo 3
 def exo3():
@@ -47,7 +45,6 @@ def exo4():
       a -= 2
 
    print(b)
-
 
 #Exo 5
 def exo5():
@@ -76,6 +73,7 @@ def exo6():
 #afficher sa note, sachant qu'elle s'obtient en multipliant la longueur des cornes par la hauteur au #garrot, valeur à laquelle on ajoute le poids.
 
 def exo7():
+
    nbkarva = int(input())
    p= 0
    a = 0
@@ -94,3 +92,48 @@ def exo7():
       a = 0
       l = 0
       g = 0
+
+def exo8():
+   nbperson = int(input())
+
+   equipone = []
+   equiptwo = []
+   count = 0
+
+   for i in range(nbperson * 2):
+      n = int(input())
+      count += 1
+      
+      if count%2 == 0:
+         equiptwo.append(n)
+      
+      elif count%2 != 0:
+         equipone.append(n)
+
+
+   a = sum(equipone)
+   b = sum(equiptwo)
+   x = 0
+   if a > b:
+      x = "1"
+   else :
+      x = "2" 
+
+
+   print("L'équipe ",x," a un avantage")
+
+   print("Poids total pour l'équipe 1 : " + str(a) )
+   print("Poids total pour l'équipe 2 : " + str(b) )
+
+def exo9():
+   code = 64741
+   goodresult = "Bon festin !"
+   badresult = "Allez-vous en ! "
+
+   reponse = int(input())
+   if reponse != code:
+      print(badresult)
+   else :
+      print(goodresult)
+
+
