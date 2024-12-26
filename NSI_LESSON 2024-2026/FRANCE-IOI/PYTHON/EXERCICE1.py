@@ -1,4 +1,6 @@
-from robot import *
+
+#Liste des exercices obligatoires du Niveau 1 sur le site France-IOI 
+#https://www.france-ioi.org/algo/chapters.php
 
 #Exo 1
 def exo1():
@@ -136,4 +138,17 @@ def exo9():
    else :
       print(goodresult)
 
+def exo10():
+   position = int(input())
+   nb_village = int(input())
+   villages = []
 
+   for i in range(nb_village):
+      distance = abs(int(input()))
+      if distance - position <= 50:
+         villages.append(1)
+      distance = 0
+   print(len(villages))
+
+def exo102():
+   print(*(sum(abs(n-int(input()))<51 for _ in range(int(input())))for n in[int(input())]))
