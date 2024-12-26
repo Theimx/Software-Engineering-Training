@@ -152,3 +152,12 @@ def exo10():
 
 def exo102():
    print(*(sum(abs(n-int(input()))<51 for _ in range(int(input())))for n in[int(input())]))
+
+def exo11():
+   nbMarchands = int(input())
+   prix = [int(input()) for _ in range(nbMarchands)]
+   minim = min(prix)
+   for i in range(nbMarchands - 1, -1, -1):
+      if prix[i] == minim:
+         print(i + 1)
+         break
