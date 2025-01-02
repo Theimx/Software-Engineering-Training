@@ -161,3 +161,22 @@ def exo11():
       if prix[i] == minim:
          print(i + 1)
          break
+
+def exo12():
+   _nbPaire = int(input())
+
+   for i in range(_nbPaire):
+      _firstPoint = int(input())
+      _secondPoint = int(input())
+      _thirdPoint = int(input())
+      _fourthPoint = int(input())
+      _firstPointPrime = int(input())
+      _secondPointPrime = int(input())
+      _thirdPointPrime = int(input())
+      _fourthPointPrime = int(input())
+
+      if _firstPointPrime > _firstPoint and _firstPointPrime < _secondPoint:
+         if _thirdPointPrime > _fourthPoint and _thirdPointPrime < _thirdPoint:
+            print("OUI")
+      else : 
+         print("NON")
