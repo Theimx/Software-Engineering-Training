@@ -163,20 +163,18 @@ def exo11():
          break
 
 def exo12():
-   _nbPaire = int(input())
 
-   for i in range(_nbPaire):
-      _firstPoint = int(input())
-      _secondPoint = int(input())
-      _thirdPoint = int(input())
-      _fourthPoint = int(input())
-      _firstPointPrime = int(input())
-      _secondPointPrime = int(input())
-      _thirdPointPrime = int(input())
-      _fourthPointPrime = int(input())
-
-      if _firstPointPrime > _firstPoint and _firstPointPrime < _secondPoint:
-         if _thirdPointPrime > _fourthPoint and _thirdPointPrime < _thirdPoint:
-            print("OUI")
-      else : 
+   nbPaires = int(input())
+   for loop in range(nbPaires):
+      xMin1 = int(input())
+      xMax1 = int(input())
+      yMin1 = int(input())
+      yMax1 = int(input())
+      xMin2 = int(input())
+      xMax2 = int(input())
+      yMin2 = int(input())
+      yMax2 = int(input())
+      if ( (xMax2 <= xMin1) or (xMax1 <= xMin2) ) or ( (yMax2 <= yMin1) or (yMax1 <= yMin2) ):
          print("NON")
+      else:
+         print("OUI")
