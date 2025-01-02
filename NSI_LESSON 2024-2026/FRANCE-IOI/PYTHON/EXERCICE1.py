@@ -151,7 +151,17 @@ def exo10():
    print(len(villages))
 
 def exo102():
-   print(*(sum(abs(n-int(input()))<51 for _ in range(int(input())))for n in[int(input())]))
+   posActuelle = int(input())
+nbVillages = int(input())
+nbAccessibles = 0
+for loop in range(nbVillages):
+   posVillage = int(input())
+   ecart = posActuelle - posVillage
+   if ecart < 0:
+      ecart = -ecart
+   if ecart <= 50:
+      nbAccessibles = nbAccessibles + 1
+print(nbAccessibles)
 
 def exo11():
    nbMarchands = int(input())
