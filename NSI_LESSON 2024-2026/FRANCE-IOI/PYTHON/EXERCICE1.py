@@ -152,16 +152,16 @@ def exo10():
 
 def exo102():
    posActuelle = int(input())
-nbVillages = int(input())
-nbAccessibles = 0
-for loop in range(nbVillages):
-   posVillage = int(input())
-   ecart = posActuelle - posVillage
-   if ecart < 0:
-      ecart = -ecart
-   if ecart <= 50:
-      nbAccessibles = nbAccessibles + 1
-print(nbAccessibles)
+   nbVillages = int(input())
+   nbAccessibles = 0
+   for loop in range(nbVillages):
+      posVillage = int(input())
+      ecart = posActuelle - posVillage
+      if ecart < 0:
+         ecart = -ecart
+      if ecart <= 50:
+         nbAccessibles = nbAccessibles + 1
+   print(nbAccessibles)
 
 def exo11():
    nbMarchands = int(input())
@@ -188,3 +188,32 @@ def exo12():
          print("NON")
       else:
          print("OUI")
+
+def exo13():
+   nb_jeton = int(input())
+   result = "Dans une zone jaune"
+
+   for i in range(nb_jeton):
+      x = int(input())
+      y = int(input())
+      result = "Dans une zone jaune"
+
+      if x >= 10 and x <= 85: #toute la zone bleus 
+         if y >= 10 and y <= 55:
+            result = "Dans une zone bleue"
+            if x > 25 and x < 50: #la petite partie jaune dans le bleus
+               if y > 20 and  y < 45 :
+                  result = "Dans une zone jaune"
+
+      if x >= 15 and x <= 45 :
+         if y >= 60 and y <= 70:
+            result = "Dans une zone rouge" 
+      if x >= 60 and x <= 85 :
+         if y >= 60 and y <= 70:
+            result = "Dans une zone rouge" 
+
+      if x < 0 or x > 90:   #en dehirs de la feuille 
+         result = "En dehors de la feuille"
+      if y < 0 or y > 70:
+         result = "En dehors de la feuille"
+      print(result)
