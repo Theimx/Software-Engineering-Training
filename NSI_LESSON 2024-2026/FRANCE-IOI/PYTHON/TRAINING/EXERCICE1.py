@@ -217,3 +217,13 @@ def exo13():
       if y < 0 or y > 70:
          result = "En dehors de la feuille"
       print(result)
+
+def exo14():
+   nbPierreMax=int(input())
+   nbPierre=0
+   etage=1
+   while (nbPierre+(etage*etage))<=nbPierreMax:
+      nbPierre+=(etage*etage)
+      etage=etage+1
+   print(etage-1)
+   print(nbPierre)
