@@ -227,3 +227,21 @@ def exo14():
       etage=etage+1
    print(etage-1)
    print(nbPierre)
+
+   
+
+#exo 15 : 
+
+nb_mesure = int(input())
+tpmin = int(input())
+tpmax = int(input())
+
+
+while nb_mesure > 0: 
+   mesure = int(input())
+   if mesure < tpmin or mesure > tpmax: 
+      print("Alerte !!")
+      break
+   elif mesure > tpmin and mesure < tpmax:
+      print("Rien à signaler")
+      nb_mesure -= 1
