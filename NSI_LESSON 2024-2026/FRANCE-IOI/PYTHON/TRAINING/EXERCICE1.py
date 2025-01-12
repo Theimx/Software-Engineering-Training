@@ -232,16 +232,14 @@ def exo14():
 
 #exo 15 : 
 
-nb_mesure = int(input())
-tpmin = int(input())
-tpmax = int(input())
-
-
-while nb_mesure > 0: 
-   mesure = int(input())
-   if mesure < tpmin or mesure > tpmax: 
-      print("Alerte !!")
-      break
-   elif mesure > tpmin and mesure < tpmax:
-      print("Rien à signaler")
-      nb_mesure -= 1
+nb_test = int(input())
+t_min = int(input())
+t_max = int(input())
+ 
+for i in range(nb_test):
+    t_test = int(input())
+    if t_min <= t_test <= t_max:
+        print("Rien à signaler")
+    else:
+        print("Alerte !!")
+        break
