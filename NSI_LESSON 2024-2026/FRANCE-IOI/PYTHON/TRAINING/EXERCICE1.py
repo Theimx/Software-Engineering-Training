@@ -172,61 +172,63 @@ def exo11():
          print(i + 1)
          break
 
-def exo12():
+#exo 12
 
-   nbPaires = int(input())
-   for loop in range(nbPaires):
-      xMin1 = int(input())
-      xMax1 = int(input())
-      yMin1 = int(input())
-      yMax1 = int(input())
-      xMin2 = int(input())
-      xMax2 = int(input())
-      yMin2 = int(input())
-      yMax2 = int(input())
-      if ( (xMax2 <= xMin1) or (xMax1 <= xMin2) ) or ( (yMax2 <= yMin1) or (yMax1 <= yMin2) ):
-         print("NON")
-      else:
-         print("OUI")
+nbPaires = int(input())
+for loop in range(nbPaires):
+   xMin1 = int(input())
+   xMax1 = int(input())
+   yMin1 = int(input())
+   yMax1 = int(input())
+   xMin2 = int(input())
+   xMax2 = int(input())
+   yMin2 = int(input())
+   yMax2 = int(input())
+   if ( (xMax2 <= xMin1) or (xMax1 <= xMin2) ) or ( (yMax2 <= yMin1) or (yMax1 <= yMin2) ):
+      print("NON")
+   else:
+      print("OUI")
 
-def exo13():
-   nb_jeton = int(input())
+#exo 13
+
+nb_jeton = int(input())
+result = "Dans une zone jaune"
+
+for i in range(nb_jeton):
+   x = int(input())
+   y = int(input())
    result = "Dans une zone jaune"
 
-   for i in range(nb_jeton):
-      x = int(input())
-      y = int(input())
-      result = "Dans une zone jaune"
+   if x >= 10 and x <= 85: #toute la zone bleus 
+      if y >= 10 and y <= 55:
+         result = "Dans une zone bleue"
+         if x > 25 and x < 50: #la petite partie jaune dans le bleus
+            if y > 20 and  y < 45 :
+               result = "Dans une zone jaune"
 
-      if x >= 10 and x <= 85: #toute la zone bleus 
-         if y >= 10 and y <= 55:
-            result = "Dans une zone bleue"
-            if x > 25 and x < 50: #la petite partie jaune dans le bleus
-               if y > 20 and  y < 45 :
-                  result = "Dans une zone jaune"
+   if x >= 15 and x <= 45 :
+      if y >= 60 and y <= 70:
+         result = "Dans une zone rouge" 
+   if x >= 60 and x <= 85 :
+      if y >= 60 and y <= 70:
+         result = "Dans une zone rouge" 
 
-      if x >= 15 and x <= 45 :
-         if y >= 60 and y <= 70:
-            result = "Dans une zone rouge" 
-      if x >= 60 and x <= 85 :
-         if y >= 60 and y <= 70:
-            result = "Dans une zone rouge" 
+   if x < 0 or x > 90:   #en dehirs de la feuille 
+      result = "En dehors de la feuille"
+   if y < 0 or y > 70:
+      result = "En dehors de la feuille"
+   print(result)
 
-      if x < 0 or x > 90:   #en dehirs de la feuille 
-         result = "En dehors de la feuille"
-      if y < 0 or y > 70:
-         result = "En dehors de la feuille"
-      print(result)
+#exo 14
 
-def exo14():
-   nbPierreMax=int(input())
-   nbPierre=0
-   etage=1
-   while (nbPierre+(etage*etage))<=nbPierreMax:
-      nbPierre+=(etage*etage)
-      etage=etage+1
-   print(etage-1)
-   print(nbPierre)
+nbPierreMax=int(input())
+nbPierre=0
+etage=1
+while (nbPierre+(etage*etage))<=nbPierreMax:
+   nbPierre+=(etage*etage)
+   etage=etage+1
+print(etage-1)
+print(nbPierre)
 
    
 

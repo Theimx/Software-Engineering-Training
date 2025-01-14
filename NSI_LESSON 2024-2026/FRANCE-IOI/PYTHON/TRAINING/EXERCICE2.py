@@ -20,3 +20,5 @@ print(round((money//book)))
 
 #or 
 print(round(float(input())//float(input())))
+
+#exo 3
