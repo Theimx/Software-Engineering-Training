@@ -1,3 +1,9 @@
+#Conversion Binaire :
+
+#Note : ob = Base Binaire 
+#Note : od = Base décimal 
+#Note : ox = Base Héxadécimal 
+
 #Exo I : 
 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3,):
