@@ -145,5 +145,3 @@ def tablemultiplication():
     print("gg")
 
 
-
-
