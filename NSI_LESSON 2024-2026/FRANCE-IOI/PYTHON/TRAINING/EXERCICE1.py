@@ -4,29 +4,75 @@ import math,random
 #https://www.france-ioi.org/algo/chapters.php
 
 #Ce fichier n'a pas pour but d'être excecuté.
-#Exercices validé : 15/70
+#Exercices validé : 17/70
 
-#Exo 1
-def exo1():
-   haut()
-   haut()
-   haut()
-   droite()
-   droite()
-   bas()
-   bas()
-   droite()
+#Exo 1 Chapitres 1, Découverte: Hello world!
 
-#Exo 2
-def exo2(): 
-   for i in range(20):
-      ramasser()
-      for e in range(15):
-         droite()
-      deposer()
-      for y in range(15):
-         gauche()
+print("Hello world!")
 
+#Exo 2 Chapitres 1, Entraînement: Présentation
+
+print("Coucou !")
+print("Je m'appelle Camthalion")
+print("Ma devise est 'Parler peu mais parler bien'.")
+
+#Exo 3 Chapitres 1, Découverte: Plan de la montagne
+
+print("""
+Tout droit tu grimperas,
+La clé tu trouveras,
+Habile tu seras,
+Quand tu les porteras,
+Et avec le chef tu reviendras !
+""")
+
+#Exo 4 Chapitres 1, Validation: Dans le fourré
+
+from robot import *
+haut()
+haut()
+haut()
+droite()
+droite()
+bas()
+bas()
+droite()
+
+#Exo 5 Chapitres 1, Challenge: Empilement de cylindres
+
+#Exo 6 Chapitres 1, Challenge: Recette secrète
+
+#Exo 7 Chapitres 2, Découverte: Punition
+
+for i in range(135):
+   print("Je dois respecter le Grand Sorcier.")
+
+#Exo 8 Chapitres 2, Entraînement: Mathématiques de base
+
+#Exo 9 Chapitres 2, Entraînement: Transport d'eau
+
+#Exo 10 Chapitres 2, Découverte: Le secret du Goma
+
+#Exo 11 Chapitres 2, Entraînement: Sisyphe
+
+#Exo 12 Chapitres 2, Découverte: Page d'écriture
+
+#Exo 13 Chapitres 2, Découverte: Jeu de dames
+
+#Exo 14 Chapitres 2, Entraînement: Mont Kailash
+
+#Exo 15 Chapitres 2, Validation: Vendanges
+
+from robot import * 
+
+for i in range(20):
+   ramasser()
+   for e in range(15):
+      droite()
+   deposer()
+   for y in range(15):
+      gauche()
+      
 #Exo 3
 def exo3():
 
