@@ -72,22 +72,45 @@ for i in range(20):
    deposer()
    for y in range(15):
       gauche()
-      
-#Exo 3
-def exo3():
 
-   steps = 1 
+#Exo 16 Chapitres 2, Challenge: Le Grand Événement
 
-   for i in range(10):
-      for i in range(steps): 
-         droite()
-      ramasser()
-      for i in range(steps):
-         gauche()
-      deposer()
-      steps += 1
+#Exo 17 Chapitres 3, Découverte: Réponds !
 
-#Exo 4 
+#Exo 18 Chapitres 3, Découverte: L'éclipse
+
+#Exo 19 Chapitres 3, Entraînement: Bonbons pour tout le monde !
+
+#Exo 20 Chapitres 3, Découverte: L'algoréathlon
+
+#Exo 21 Chapitres 3, Entraînement: Cour de récréation
+
+#Exo 22 Chapitres 3, Découverte: Une partie de cache-cache
+
+#Exo 23 Chapitres 3, Entraînement: Progresser par l'erreur
+
+#Exo 24 Chapitres 3, Entraînement: Décollage de fusée
+
+#Exo 25 Chapitres 3, Entraînement: Invasion de batraciens
+
+#Exo 26 Chapitres 3, Entraînement: Kermesse
+
+#Exo 27 Chapitres 3, Validation: Course avec les enfants
+
+from robot import *
+
+steps = 1 
+
+for i in range(10):
+   for i in range(steps): 
+      droite()
+   ramasser()
+   for i in range(steps):
+      gauche()
+   deposer()
+   steps += 1
+
+#Exo 28 Chapitres 3, Validation: Construction d'une pyramide
 def exo4():
    a = 17
    b = 0
@@ -98,52 +121,62 @@ def exo4():
 
    print(b)
 
-#Exo 5
-def exo5():
-   positiondepart = int(input())
-   largeuremplacement = int(input())
-   nbvendeur = int(input())
+#Exo 29 Chapitres 3, Challenge: Table de multiplication
 
-   for i in range(nbvendeur + 1):
-      print(positiondepart)
-      positiondepart += largeuremplacement 
+#Exo 30 Chapitres 4, Découverte: Récoltes
 
-#Exo 6
-def exo6():
-   a = int(input())
-   b = int(input())
-   result = 0
+#Exo 31 Chapitres 4, Entraînement: Retraite spirituelle
 
-   while a != b-1 :
-      result += a * a
-      a -= 1
-      
-   print(result)
+#Exo 32 Chapitres 4, Entraînement: Âge des petits-enfants
 
-#Exo7
-#lire 4 entiers : son poids, son âge, la longueur de ses cornes et la hauteur au garrot ;
-#afficher sa note, sachant qu'elle s'obtient en multipliant la longueur des cornes par la hauteur au #garrot, valeur à laquelle on ajoute le poids.
+#Exo 33 Chapitres 4, Entraînement: Encore des punitions
 
-def exo7():
+#Exo 34 Chapitres 4, Entraînement: Graduation de thermomètres
 
-   nbkarva = int(input())
+#Exo 35 Chapitres 4, Entraînement: Jeu de calcul mental
+
+#Exo 36 Chapitres 4, Validation: La Grande Braderie
+
+positiondepart = int(input())
+largeuremplacement = int(input())
+nbvendeur = int(input())
+
+for i in range(nbvendeur + 1):
+   print(positiondepart)
+   positiondepart += largeuremplacement 
+
+#Exo 37 Chapitres 4, Entraînement: Bétail
+
+#Exo 38 Chapitres 4, Validation: Socles pour statues
+a = int(input())
+b = int(input())
+result = 0
+
+while a != b-1 :
+   result += a * a
+   a -= 1
+print(result)
+
+#Exo 39 Chapitres 4, Validation: Le plus beau Karva
+
+nbkarva = int(input())
+p= 0
+a = 0
+l = 0
+g = 0
+
+score = 0
+for i in range(nbkarva):
+   p =int(input())
+   a =int(input())
+   l =int(input())
+   g =int(input())
+   score = l*g + p
+   print(score)
    p= 0
    a = 0
    l = 0
    g = 0
-
-   score = 0
-   for i in range(nbkarva):
-      p =int(input())
-      a =int(input())
-      l =int(input())
-      g =int(input())
-      score = l*g + p
-      print(score)
-      p= 0
-      a = 0
-      l = 0
-      g = 0
 
 def exo8():
    nbperson = int(input())
