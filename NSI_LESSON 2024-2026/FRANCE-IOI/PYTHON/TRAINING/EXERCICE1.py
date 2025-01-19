@@ -1,8 +1,10 @@
 import math,random
 
-#Liste des exercices obligatoires du Niveau 1 sur le site France-IOI 
-#Ajouter les 70 exercices ainsi que les corrections officielles plus tard * Et les noms de chaque exo
+#Liste des 70 exercices du Niveau 1 du site France-IOI en Python.
 #https://www.france-ioi.org/algo/chapters.php
+
+#Ce fichier n'a pas pour but d'être excecuté.
+#Exercices validé : 15/70
 
 #Exo 1
 def exo1():

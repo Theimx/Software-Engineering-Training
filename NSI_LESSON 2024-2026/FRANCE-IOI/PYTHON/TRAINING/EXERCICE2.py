@@ -1,6 +1,6 @@
 import math,random
 
-#Liste des 44 exercices du Niveau 2 du site France-IOI.
+#Liste des 44 exercices du Niveau 2 du site France-IOI en Python.
 #https://www.france-ioi.org/algo/chapters.php
 
 #Ce fichier n'a pas pour but d'être excecuté.
