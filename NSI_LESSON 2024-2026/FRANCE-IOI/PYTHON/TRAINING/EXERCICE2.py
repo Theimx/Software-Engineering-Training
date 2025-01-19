@@ -31,3 +31,4 @@ else :
     print("non")
 
 #exo 4
+print((int(input())%24+24)%24)
