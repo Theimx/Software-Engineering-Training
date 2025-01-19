@@ -1,5 +1,7 @@
 import math
 
+#Modifier les deux fichier pour mettre le nom de l'exo puis la solution *
+
 #Liste des exercices obligatoires du Niveau 2 sur le site France-IOI 
 #https://www.france-ioi.org/algo/chapters.php
 
@@ -32,3 +34,8 @@ else :
 
 #exo 4
 print((int(input())%24+24)%24)
+
+#Préparation de l'onguent
+grammes = [500, 180, 650, 25, 666, 42, 421, 1, 370, 211]
+indexGramme = int(input())
+print(grammes[indexGramme])

@@ -1,5 +1,6 @@
 
 #Liste des exercices obligatoires du Niveau 1 sur le site France-IOI 
+#Ajouter les 70 exercices ainsi que les corrections officielles plus tard * Et les noms de chaque exo
 #https://www.france-ioi.org/algo/chapters.php
 
 #Exo 1
