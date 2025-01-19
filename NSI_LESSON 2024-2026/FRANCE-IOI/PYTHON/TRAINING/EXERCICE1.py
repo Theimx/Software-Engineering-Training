@@ -178,6 +178,22 @@ for i in range(nbkarva):
    l = 0
    g = 0
 
+#Exo 40 Chapitres 5, Validation: 
+
+#Exo 41 Chapitres 5, Validation: 
+
+#Exo 42 Chapitres 5, Validation: 
+
+#Exo 43 Chapitres 5, Validation: 
+
+#Exo 44 Chapitres 5, Validation: 
+
+#Exo 45 Chapitres 5, Validation: 
+
+#Exo 46 Chapitres 5, Validation: 
+
+#Exo 47 Chapitres 5, Validation: 
+
 def exo8():
    nbperson = int(input())
 
