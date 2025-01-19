@@ -1,11 +1,10 @@
 import math,random
 
-#Modifier les deux fichier pour mettre le nom de l'exo puis la solution *
-#Les 44 exercices du niveau 2 a faire ici
-
-#Liste des 44 exercices du Niveau 2 du site France-IOI 
+#Liste des 44 exercices du Niveau 2 du site France-IOI.
 #https://www.france-ioi.org/algo/chapters.php
 
+#Ce fichier n'a pas pour but d'être excecuté.
+#Exercices validé : 5/44
 
 #Exo 1 Chapitres 1, Découverte: Origami
 
@@ -103,3 +102,21 @@ print(grammes[indexGramme])
 #Exo 34 Chapitres 3, Validation: Analyse d’une langue
 
 #Exo 35 Chapitres 3, Validation: Sans espaces
+
+#Exo 36 Chapitres 4, Découverte: Code secret deux fois
+
+#Exo 37 Chapitres 4, Découverte: Deux codes secrets
+
+#Exo 38 Chapitres 4, Entraînement: Dentelle
+
+#Exo 39 Chapitres 4, Entraînement: Motif rectangulaire
+
+#Exo 40 Chapitres 4, Découverte: Le plus petit de deux entiers
+
+#Exo 41 Chapitres 4, Entraînement: Phénomène numérique
+
+#Exo 42 Chapitres 4, Entraînement: Distance euclidienne
+
+#Exo 43 Chapitres 4, Validation: Formes creuses
+
+#Exo 44 Chapitres 4, Validation: Convertisseur d'unités
