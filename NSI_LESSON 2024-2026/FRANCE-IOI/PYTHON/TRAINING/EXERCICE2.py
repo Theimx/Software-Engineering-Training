@@ -22,3 +22,12 @@ print(round((money//book)))
 print(round(float(input())//float(input())))
 
 #exo 3
+
+nbPersonnes = int(input())
+nbFruits = int(input())
+if (nbFruits % nbPersonnes) == 0: 
+    print("oui")
+else : 
+    print("non")
+
+#exo 4
