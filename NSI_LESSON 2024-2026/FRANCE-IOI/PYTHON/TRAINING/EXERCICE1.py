@@ -178,64 +178,62 @@ for i in range(nbkarva):
    l = 0
    g = 0
 
-#Exo 40 Chapitres 5, Validation: 
+#Exo 40 Chapitres 5, Découverte: Transport des bagages
 
-#Exo 41 Chapitres 5, Validation: 
+#Exo 41 Chapitres 5, Entraînement: Bornes kilométriques
 
-#Exo 42 Chapitres 5, Validation: 
+#Exo 42 Chapitres 5, Entraînement: Tarifs dégressifs
 
-#Exo 43 Chapitres 5, Validation: 
+#Exo 43 Chapitres 5, Entraînement: Bagarre générale
 
-#Exo 44 Chapitres 5, Validation: 
+#Exo 44 Chapitres 5, Découverte: Tarif du bateau
 
-#Exo 45 Chapitres 5, Validation: 
+#Exo 45 Chapitres 5, Entraînement: Traversée du pont
 
-#Exo 46 Chapitres 5, Validation: 
+#Exo 46 Chapitres 5, Validation: Concours de tir à la corde
 
-#Exo 47 Chapitres 5, Validation: 
+nbperson = int(input())
 
-def exo8():
-   nbperson = int(input())
+equipone = []
+equiptwo = []
+count = 0
 
-   equipone = []
-   equiptwo = []
-   count = 0
-
-   for i in range(nbperson * 2):
-      n = int(input())
-      count += 1
-      
-      if count%2 == 0:
-         equiptwo.append(n)
-      
-      elif count%2 != 0:
-         equipone.append(n)
+for i in range(nbperson * 2):
+   n = int(input())
+   count += 1
+   
+   if count%2 == 0:
+      equiptwo.append(n)
+   
+   elif count%2 != 0:
+      equipone.append(n)
 
 
-   a = sum(equipone)
-   b = sum(equiptwo)
-   x = 0
-   if a > b:
-      x = "1"
-   else :
-      x = "2" 
+a = sum(equipone)
+b = sum(equiptwo)
+x = 0
+if a > b:
+   x = "1"
+else :
+   x = "2" 
 
 
-   print("L'équipe ",x," a un avantage")
+print("L'équipe ",x," a un avantage")
 
-   print("Poids total pour l'équipe 1 : " + str(a) )
-   print("Poids total pour l'équipe 2 : " + str(b) )
+print("Poids total pour l'équipe 1 : " + str(a) )
+print("Poids total pour l'équipe 2 : " + str(b) )
 
-def exo9():
-   code = 64741
-   goodresult = "Bon festin !"
-   badresult = "Allez-vous en ! "
+#Exo 47 Chapitres 5, Validation: Mot de passe du village
 
-   reponse = int(input())
-   if reponse != code:
-      print(badresult)
-   else :
-      print(goodresult)
+code = 64741
+goodresult = "Bon festin !"
+badresult = "Allez-vous en ! "
+
+reponse = int(input())
+if reponse != code:
+   print(badresult)
+else :
+   print(goodresult)
 
 def exo10():
    position = int(input())
