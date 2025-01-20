@@ -235,41 +235,72 @@ if reponse != code:
 else :
    print(goodresult)
 
-def exo10():
-   position = int(input())
-   nb_village = int(input())
-   villages = []
+#Exo 48 Chapitres 6, Entraînement: Villes et villages
 
-   for i in range(nb_village):
-      distance = abs(int(input()))
-      if distance - position <= 50:
-         villages.append(1)
-      distance = 0
-   print(len(villages))
+#Exo 49 Chapitres 6, Validation: Planning de la journée
 
-def exo102():
-   posActuelle = int(input())
-   nbVillages = int(input())
-   nbAccessibles = 0
-   for loop in range(nbVillages):
-      posVillage = int(input())
-      ecart = posActuelle - posVillage
-      if ecart < 0:
-         ecart = -ecart
-      if ecart <= 50:
-         nbAccessibles = nbAccessibles + 1
-   print(nbAccessibles)
 
-def exo11():
-   nbMarchands = int(input())
-   prix = [int(input()) for _ in range(nbMarchands)]
-   minim = min(prix)
-   for i in range(nbMarchands - 1, -1, -1):
-      if prix[i] == minim:
-         print(i + 1)
-         break
+position = int(input())
+nb_village = int(input())
+villages = []
 
-#exo 12
+for i in range(nb_village):
+   distance = abs(int(input()))
+   if distance - position <= 50:
+      villages.append(1)
+   distance = 0
+print(len(villages))
+
+#or 
+
+print(*(sum(abs(n-int(input()))<51 for _ in range(int(input())))for n in[int(input())]))
+
+#or 
+
+posActuelle = int(input())
+nbVillages = int(input())
+nbAccessibles = 0
+for loop in range(nbVillages):
+   posVillage = int(input())
+   ecart = posActuelle - posVillage
+   if ecart < 0:
+      ecart = -ecart
+   if ecart <= 50:
+      nbAccessibles = nbAccessibles + 1
+print(nbAccessibles)
+
+
+#Exo 50 Chapitres 6, Découverte: Étape la plus longue
+
+#Exo 51 Chapitres 6, Entraînement: Calcul des dénivelées
+
+#Exo 52 Chapitres 6, Entraînement: Type d'arbres
+
+#Exo 53 Chapitres 6, Entraînement: Tarifs de l'auberge
+
+#Exo 54 Chapitres 6, Entraînement: Protection du village
+
+#Exo 55 Chapitres 6, Validation: Le juste prix
+
+nbMarchands = int(input())
+prix = [int(input()) for _ in range(nbMarchands)]
+minim = min(prix)
+for i in range(nbMarchands - 1, -1, -1):
+    if prix[i] == minim:
+        print(i + 1)
+        break
+
+#Exo 56 Chapitres 7, Découverte: Espion étranger
+
+#Exo 57 Chapitres 7, Entraînement: Maison de l'espion
+
+#Exo 58 Chapitres 7, Entraînement: Nombre de jours dans le mois
+
+#Exo 59 Chapitres 7, Entraînement: Amitié entre gardes
+
+#Exo 60 Chapitres 7, Entraînement: Nombre de personnes à la fête
+
+#Exo 61 Chapitres 7, Validation: Casernes de pompiers
 
 nbPaires = int(input())
 for loop in range(nbPaires):
@@ -286,7 +317,13 @@ for loop in range(nbPaires):
    else:
       print("OUI")
 
-#exo 13
+#Exo 62 Chapitres 7, Découverte: Personne disparue
+
+#Exo 63 Chapitres 7, Découverte: La grande fête
+
+#Exo 64 Chapitres 7, Entraînement: L'espion est démasqué !
+
+#Exo 65 Chapitres 7, Validation: Zones de couleurs
 
 nb_jeton = int(input())
 result = "Dans une zone jaune"
@@ -316,7 +353,13 @@ for i in range(nb_jeton):
       result = "En dehors de la feuille"
    print(result)
 
-#exo 14
+#Exo 66 Chapitres 8, Découverte: Département de médecine : contrôle d'une épidémie
+
+#Exo 67 Chapitres 8, Entraînement: Administration : comptes annuels
+
+#Exo 68 Chapitres 8, Entraînement: Département de pédagogie : le « c'est plus, c'est moins »
+
+#Exo 69 Chapitres 8, Validation: Département d'architecture : construction d'une pyramide
 
 nbPierreMax=int(input())
 nbPierre=0
@@ -327,9 +370,7 @@ while (nbPierre+(etage*etage))<=nbPierreMax:
 print(etage-1)
 print(nbPierre)
 
-   
-
-#exo 15 : 
+#Exo 70 Chapitres 8, Validation: Département de chimie : mélange explosif
 
 nb_test = int(input())
 t_min = int(input())
