@@ -59,6 +59,14 @@ print(grammes[indexGramme])
 
 #Exo 13 Chapitres 2, Entraînement: Liste de courses
 
+poids = []
+prix = [9, 5, 12, 15, 7, 42, 13, 10, 1 , 20]
+
+for i in range(10):
+   poids.append((int(input())*prix[i]))
+   
+print(sum(poids))
+
 #Exo 14 Chapitres 2, Découverte: Grand inventaire
 
 #Exo 15 Chapitres 2, Découverte: Étude de marché

@@ -1,11 +1,5 @@
 import random
 
-# Proposer une fonction qui réalise le jeux de la pierre.
-# Le jeu du Pierre, est un jeux ou les joueurs retirent des pierres d'un ensemble et celui qui retire la dernière pierre gagne. Le tas de pierre est fixé a 25.
-# Les joueurs retirent à tour de rôle un nombre de pierres entre 1 et 3. Le joueur ne doit pas pouvoir retirer plus de 3 pierre et moins d’une pierre.
-# Le joueur qui prend la dernière pierre gagne.
-# Le programme doit vérifier après chaque tour si un joueur a gagné et il vérifie que les joueurs entre un nombre de pierre correcte.
-
 # Proposer une fonction pour le jeux de la roulette
 # L’utilisateur possède 60 jetons, a chaque manche, il peut parier sur 1 a 3 cases. Chaque pari consomme un jeton.
 # Si l’utilisateur gagne en ayant parié sur 1 case, il gagne 10 jetons.
