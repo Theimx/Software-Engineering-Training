@@ -1,5 +1,7 @@
 import math,random
 
+#lagomorphes
+
 #Liste des 44 exercices du Niveau 2 du site France-IOI en Python.
 #https://www.france-ioi.org/algo/chapters.php
 
@@ -64,11 +66,20 @@ prix = [9, 5, 12, 15, 7, 42, 13, 10, 1 , 20]
 
 for i in range(10):
    poids.append((int(input())*prix[i]))
-   
+
 print(sum(poids))
 
 #Exo 14 Chapitres 2, Découverte: Grand inventaire
 
+nbOP = int(input())
+LivreDeComptes = [0,0,0,0,0,0,0,0,0,0]
+
+for i in range(nbOP):
+    indexLigne = (int(input()) -1)
+    LivreDeComptes[indexLigne] = (int(input()) + LivreDeComptes[indexLigne] )
+for i in LivreDeComptes :
+    print(i)
+    
 #Exo 15 Chapitres 2, Découverte: Étude de marché
 
 #Exo 16 Chapitres 2, Entraînement: Répartition du poids
