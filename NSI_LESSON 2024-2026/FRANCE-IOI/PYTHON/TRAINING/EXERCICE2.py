@@ -6,6 +6,7 @@ import math,random
 #https://www.france-ioi.org/algo/chapters.php
 
 #Ce fichier n'a pas pour but d'être excecuté.
+#Exercices validé France-IOI : 29
 #Exercices validé : 9/44
 
 #Exo 1 Chapitres 1, Découverte: Origami

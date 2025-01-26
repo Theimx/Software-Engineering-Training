@@ -4,7 +4,8 @@ import math,random
 #https://www.france-ioi.org/algo/chapters.php
 
 #Ce fichier n'a pas pour but d'être excecuté.
-#Exercices validé : 17/70
+#Exercices validé France-IOI : 29
+#Exercices validé : 20/70
 
 #Exo 1 Chapitres 1, Découverte: Hello world!
 
@@ -40,6 +41,27 @@ droite()
 
 #Exo 5 Chapitres 1, Challenge: Empilement de cylindres
 
+from robot import *
+deplacer(1, 2)  
+deplacer(1, 3)  
+deplacer(2, 3)  
+deplacer(1, 2)  
+deplacer(3, 1)  
+deplacer(3, 2)  
+deplacer(1, 2)  
+
+deplacer(1, 3)  
+deplacer(2, 1)
+
+deplacer(2, 3)  
+deplacer(1, 2)  
+deplacer(3, 1) 
+
+deplacer(2, 1)  
+deplacer(2, 3)  
+deplacer(1, 2)  
+deplacer(1, 3)  
+deplacer(2, 3)  
 #Exo 6 Chapitres 1, Challenge: Recette secrète
 
 #Exo 7 Chapitres 2, Découverte: Punition
