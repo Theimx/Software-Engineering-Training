@@ -6,7 +6,7 @@ import math,random
 #https://www.france-ioi.org/algo/chapters.php
 
 #Ce fichier n'a pas pour but d'être excecuté.
-#Exercices validé : 5/44
+#Exercices validé : 9/44
 
 #Exo 1 Chapitres 1, Découverte: Origami
 
@@ -82,7 +82,32 @@ for i in LivreDeComptes :
     
 #Exo 15 Chapitres 2, Découverte: Étude de marché
 
+nbProduits = int(input())
+nbPersonnes = int(input())
+
+tableau = [0] * nbProduits
+ 
+for i in range(nbPersonnes):
+    numProd = int(input())
+    
+    tableau[numProd] = tableau[numProd] + 1
+     
+for j in range(nbProduits):
+   print(tableau[j])
+
 #Exo 16 Chapitres 2, Entraînement: Répartition du poids
+
+nbCharrettes = int(input())
+poids_list = []
+
+for _ in range(nbCharrettes):
+    poids = float(input())
+    poids_list.append(poids)
+
+poids_moyen = sum(poids_list) / nbCharrettes
+
+for poids in poids_list:
+    print(poids_moyen - poids)
 
 #Exo 17 Chapitres 2, Validation: Visite de la mine
 
