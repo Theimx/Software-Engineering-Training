@@ -7,7 +7,7 @@ import math,random
 
 #Ce fichier n'a pas pour but d'être excecuté.
 #Exercices validé France-IOI : 29
-#Exercices validé : 11/44
+#Exercices validé : 12/44
 
 #Exo 1 Chapitres 1, Découverte: Origami
 
@@ -135,6 +135,21 @@ for move in reversed(deplac):
         print(3)
 
 #Exo 18 Chapitres 2, Découverte: Journée des cadeaux
+
+nbpeople = int(input())
+town = []
+
+for _ in range(nbpeople):
+    town.append(int(input()))
+
+town.sort()
+
+if nbpeople % 2 == 1:
+
+    median = town[nbpeople // 2]
+else:
+    median = (town[nbpeople // 2 - 1] + town[nbpeople // 2]) / 2
+print(median)
 
 #Exo 19 Chapitres 2, Entraînement: Course à trois jambes
 
