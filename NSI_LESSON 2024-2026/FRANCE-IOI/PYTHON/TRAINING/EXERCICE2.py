@@ -7,7 +7,7 @@ import math,random
 
 #Ce fichier n'a pas pour but d'être excecuté.
 #Exercices validé France-IOI : 29
-#Exercices validé : 9/44
+#Exercices validé : 11/44
 
 #Exo 1 Chapitres 1, Découverte: Origami
 
@@ -22,6 +22,10 @@ import math,random
 #Exo 6 Chapitres 1, Entraînement: Construction de maisons
 
 #Exo 7 Chapitres 1, Découverte: Soirée orageuse
+
+decalage = float(input())
+decalage = (decalage * 340.29)/1000
+print(round(decalage))
 
 #Exo 8 Chapitres 1, Validation: Augmentation des taxes
 
@@ -111,6 +115,24 @@ for poids in poids_list:
     print(poids_moyen - poids)
 
 #Exo 17 Chapitres 2, Validation: Visite de la mine
+
+nbDeplacements = int(input())
+deplac = []
+
+for _ in range(nbDeplacements):
+    deplac.append(int(input()))
+
+for move in reversed(deplac):
+    if move == 1:
+        print(2)
+    elif move == 2:
+        print(1)
+    elif move == 4:
+        print(5)
+    elif move == 5:
+        print(4)
+    elif move == 3:
+        print(3)
 
 #Exo 18 Chapitres 2, Découverte: Journée des cadeaux
 
