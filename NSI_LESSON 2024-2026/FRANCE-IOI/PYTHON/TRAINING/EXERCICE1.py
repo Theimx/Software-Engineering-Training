@@ -5,7 +5,7 @@ import math,random
 
 #Ce fichier n'a pas pour but d'être excecuté.
 #Exercices validé France-IOI : 29
-#Exercices validé : 20/70
+#Exercices validé : 23/70
 
 #Exo 1 Chapitres 1, Découverte: Hello world!
 
@@ -62,7 +62,17 @@ deplacer(2, 3)
 deplacer(1, 2)  
 deplacer(1, 3)  
 deplacer(2, 3)  
+
 #Exo 6 Chapitres 1, Challenge: Recette secrète
+
+from robot import *
+
+remplir(5)
+transferer(5, 3)
+vider(3)
+transferer(5, 3)
+remplir(5)
+transferer(5, 3)
 
 #Exo 7 Chapitres 2, Découverte: Punition
 
@@ -71,7 +81,20 @@ for i in range(135):
 
 #Exo 8 Chapitres 2, Entraînement: Mathématiques de base
 
+for loop in range(13):
+   print("9 * 8 = 72")
+
 #Exo 9 Chapitres 2, Entraînement: Transport d'eau
+
+from robot import *
+
+gauche()
+gauche()
+print("Bonjour, laissez-moi vous aider")
+ramasser()
+for i in range(32):
+   droite()
+deposer()
 
 #Exo 10 Chapitres 2, Découverte: Le secret du Goma
 
