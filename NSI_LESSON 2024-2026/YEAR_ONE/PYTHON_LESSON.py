@@ -9,6 +9,17 @@
 
 #lagomorphes
 
+#Table des matières : 
+
+#0 - Introduction : 
+
+#I - Architecture materiel : 
+
+#II - Language de Programmation : 
+
+#III - Representation des Données : 
+
+
 #Exo I : 
 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3,):
