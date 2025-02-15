@@ -14,8 +14,11 @@
 #Histoires de linformatique : 
 #ADDA King Lovelace/ Alal Turing/ Von Neuman
 #Language de programmation/ premier ordinateur/ architecture 
+#Date et evenement notable 
 
 #------------ I - Architecture materiel : ----------------------------------------------------------------------------------------
+
+# -II- ARCHITECTURE DE VON NEUMAN : ------------
 
 # -III- MEMOIRE ET LANGUAGE MACHINE : ---------
 
