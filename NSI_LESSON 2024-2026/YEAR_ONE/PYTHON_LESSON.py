@@ -1,5 +1,10 @@
 #lagomorphes
-#envoier cadeau Cassie 
+#envoyer cadeau Cassie 
+
+# ------------    LES NOMBRES DE 1 A 20 DANS PLUSIEURS BASES : 
+#Base 2 (Binaire) : 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111, 0001 0000, 0001 0001, 0001 0010, 0001 0011
+#Base 10 (Décimal) : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+#Base 16 (Héxadécimal) : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, 10, 11, 12, 13
 
 #Table des matières : 
 
@@ -12,13 +17,21 @@
 
 #------------ I - Architecture materiel : ----------------------------------------------------------------------------------------
 
-# -III- L’ORGANISATION DE LA MEMOIRE : 
+# -III- MEMOIRE ET LANGUAGE MACHINE : ---------
 
+#L’organisation de la mémoire : 
+#Les types de mémoire : 
+#Les registres : 
+#Mémoires centrales et mémoire cache : 
 
+#Jeu d’instructions:
+#Nature des instructions : 
+#Assembleur : 
 
-# -IV- SYSTEME D'EXPLOITATION : 
+# -IV- SYSTEME D'EXPLOITATION : ---------------
 #Le système Linux : 
 #Le Bash : 
+
 #------------ II - Language de Programmation : ------------------------------------------------------------------------------------
 
 #------------ III - Representation des Données : ----------------------------------------------------------------------------------
@@ -128,7 +141,7 @@ def lenght(_chaine):
 
     return(_lenght)
 
-#exo cours 28/11
+#exo cours 28/11/2024
 
 def hundred():
     for i in range(101):
@@ -158,7 +171,7 @@ def week():
             if i == 6:
                 print("jour", i+1, "semaine" ,a+1,"donc Vendredi")
 
-#Exo cours 4/12 : Boucle Borné et non Borné
+#Exo cours 4/12/2024 : Boucle Borné et non Borné
 
 def voyelledansmot(_mots):
 
