@@ -1,18 +1,27 @@
 #lagomorphes
+#envoier cadeau Cassie 
 
 #Table des matières : 
 
-#------------ 0 - Introduction : ---------------------------------------------
+#------------ 0 - Introduction : -------------------------------------------------------------------------------------------------
 
+#COURS : 
 #Histoires de linformatique : 
 #ADDA King Lovelace/ Alal Turing/ Von Neuman
 #Language de programmation/ premier ordinateur/ architecture 
 
-#------------ I - Architecture materiel : ------------------------------------
+#------------ I - Architecture materiel : ----------------------------------------------------------------------------------------
 
-#------------ II - Language de Programmation : -------------------------------
+# -III- L’ORGANISATION DE LA MEMOIRE : 
 
-#------------ III - Representation des Données : -----------------------------
+
+
+# -IV- SYSTEME D'EXPLOITATION : 
+#Le système Linux : 
+#Le Bash : 
+#------------ II - Language de Programmation : ------------------------------------------------------------------------------------
+
+#------------ III - Representation des Données : ----------------------------------------------------------------------------------
 #Conversion Binaire :
 
 #Note : ob = Base Binaire 
@@ -21,6 +30,8 @@
 
 #ASCII : American Standard Code for Information Interchange : créer en 1961. coder sur 7 bits 
 #Unicode : codé sur 21 bits : +135 000 caractères différeznts 
+
+#----------- Programmes de cours et exercices : -------------------------------------------------------------------------------------
 
 #Exo I : 
 
