@@ -1,14 +1,17 @@
+import random
+import math
+
 #lagomorphes
 #envoyer cadeau Cassie 
 
-# ------------    LES NOMBRES DE 1 A 20 DANS PLUSIEURS BASES : 
+# ------------    LES NOMBRES DE 1 A 20 DANS PLUSIEURS BASES : ---------------------------------------------------------------------------------------------------------
 #Base 2 (Binaire) : 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111, 0001 0000, 0001 0001, 0001 0010, 0001 0011
 #Base 10 (Décimal) : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
 #Base 16 (Héxadécimal) : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, 10, 11, 12, 13
 
 #Table des matières : 
 
-#------------ 0 - Introduction : -------------------------------------------------------------------------------------------------
+#---------------------- 0 - Introduction : ---------------------------------------------------------------------------------------------------------------------------------------
 
 #COURS : 
 #Histoires de linformatique : 
@@ -16,28 +19,31 @@
 #Language de programmation/ premier ordinateur/ architecture 
 #Date et evenement notable 
 
-#------------ I - Architecture materiel : ----------------------------------------------------------------------------------------
+#---------------------- I - Architecture materiel : ------------------------------------------------------------------------------------------------------------------------------
 
-# -II- ARCHITECTURE DE VON NEUMAN : ------------
+# -I- HISTOIRE DES ORDINATEURS : --------------------------
 
-# -III- MEMOIRE ET LANGUAGE MACHINE : ---------
+# -II- ARCHITECTURE DE VON NEUMAN : -----------------------
+
+# -III- MEMOIRE ET LANGUAGE MACHINE : ---------------------
 
 #L’organisation de la mémoire : 
 #Les types de mémoire : 
 #Les registres : 
 #Mémoires centrales et mémoire cache : 
-
 #Jeu d’instructions:
 #Nature des instructions : 
 #Assembleur : 
 
-# -IV- SYSTEME D'EXPLOITATION : ---------------
+# -IV- SYSTEME D'EXPLOITATION : ---------------------------
+
 #Le système Linux : 
 #Le Bash : 
 
-#------------ II - Language de Programmation : ------------------------------------------------------------------------------------
+#---------------------- II - Language de Programmation : --------------------------------------------------------------------------------------------------------------------------
 
-#------------ III - Representation des Données : ----------------------------------------------------------------------------------
+#---------------------- III - Representation des Données : ------------------------------------------------------------------------------------------------------------------------
+
 #Conversion Binaire :
 
 #Note : ob = Base Binaire 
@@ -47,7 +53,8 @@
 #ASCII : American Standard Code for Information Interchange : créer en 1961. coder sur 7 bits 
 #Unicode : codé sur 21 bits : +135 000 caractères différeznts 
 
-#----------- Programmes de cours et exercices : -------------------------------------------------------------------------------------
+#----------- Programmes de cours et exercices : --------------------------------------------------------------------------------------------------------------------------
+#----------- Nombre d'exercices : 15          : --------------------------------------------------------------------------------------------------------------------------
 
 #Exo I : 
 
@@ -193,4 +200,61 @@ def tablemultiplication():
     while _reponse != _chiffre1 * _chiffre2 : 
         _reponse = int(input("combien fond 5 fois 6 ?"))
     print("gg")
+
+def tablemultiplication():
+    _rejouer = "oui"
+
+    while _rejouer == "oui":
+        _reponse = 0
+        _chiffre1 = random.randint(1,9)
+        _chiffre2 = random.randint(1,9)
+        _question = "combien fond " + str(_chiffre1) + " fois " + str(_chiffre2) + " ?  "
+        while _reponse != _chiffre1 * _chiffre2 : 
+
+            _reponse = int(input(_question))
+        print("gg")
+        _rejouer = input("Ecrivez oui si vous voulez rejouer : ")
+
+def cartevital():
+    _sexe = int(input("entrez : 1 si vous êtes un Garçon ou 2  si vous êtes une fille : "))
+
+    if _sexe == 1 or _sexe == 2 : 
+        _annaissance = int(input("entrez les deux derniers chiffres de votre année de naissance (ex 07) : "))
+
+        if _annaissance < 99 or _annaissance > 0:
+            _moisnaissance = int(input("entrez votre mois de naissance (ex 05) : "))
+
+            if _moisnaissance <= 12 or _moisnaissance >= 1:
+                _departement = int(input("entrez le numero de votre departement de naissance ou 99 si vous êtes née a l'etranger : "))
+
+                if _departement < 99 or _departement > 0:
+
+                    _code1 = random.randint(100,999)
+                    _code2 = random.randint(100,999)
+                    if _annaissance <= 9 : 
+                        _annaissance = '0' + str(_annaissance)
+                    if _moisnaissance <= 9 : 
+                        _moisnaissance = '0' + str(_moisnaissance)
+                    if _departement <= 9 : 
+                        _departement = '0' + str(_departement)
+
+                    _securiteSocial = str(_sexe)  + str(_annaissance)  + str(_moisnaissance) + str(_departement)  + str(_code1) + str(_code2)
+                    int(_securiteSocial)
+                    print(_securiteSocial)
+
+                    _securiteSocial = int(_securiteSocial)
+                    return _securiteSocial
+                else : 
+                    cartevital()
+            else : 
+                cartevital()
+        else : 
+            cartevital()
+    else : 
+        cartevital()
+
+#a refaire avec les boucles while 
+def cartevitalboucle(): 
+    _result = 0
+    return _result
 
