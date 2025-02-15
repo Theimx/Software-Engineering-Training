@@ -14,7 +14,7 @@ import math
 #---------------------- 0 - Introduction : ---------------------------------------------------------------------------------------------------------------------------------------
 
 #COURS : 
-#Histoires de linformatique : 
+#Histoires de l'informatique : 
 #ADDA King Lovelace/ Alal Turing/ Von Neuman
 #Language de programmation/ premier ordinateur/ architecture 
 #Date et evenement notable 
