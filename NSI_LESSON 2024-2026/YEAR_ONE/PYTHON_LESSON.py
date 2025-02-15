@@ -1,3 +1,18 @@
+#lagomorphes
+
+#Table des matières : 
+
+#------------ 0 - Introduction : ---------------------------------------------
+
+#Histoires de linformatique : 
+#ADDA King Lovelace/ Alal Turing/ Von Neuman
+#Language de programmation/ premier ordinateur/ architecture 
+
+#------------ I - Architecture materiel : ------------------------------------
+
+#------------ II - Language de Programmation : -------------------------------
+
+#------------ III - Representation des Données : -----------------------------
 #Conversion Binaire :
 
 #Note : ob = Base Binaire 
@@ -7,22 +22,9 @@
 #ASCII : American Standard Code for Information Interchange : créer en 1961. coder sur 7 bits 
 #Unicode : codé sur 21 bits : +135 000 caractères différeznts 
 
-#lagomorphes
-
-#Table des matières : 
-
-#0 - Introduction : 
-
-#I - Architecture materiel : 
-
-#II - Language de Programmation : 
-
-#III - Representation des Données : 
-
-
 #Exo I : 
 
-def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3,):
+def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
 
     _moyenneG = 0
     _coefG = 0 
