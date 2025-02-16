@@ -1,7 +1,6 @@
 import random
 import math
 
-#lagomorphes
 #envoyer cadeau Cassie 
 
 # ------------    LES NOMBRES DE 1 A 20 DANS PLUSIEURS BASES : ---------------------------------------------------------------------------------------------------------
@@ -15,13 +14,29 @@ import math
 
 #COURS : 
 #Histoires de l'informatique : 
-#ADDA King Lovelace/ Alal Turing/ Von Neuman
-#Language de programmation/ premier ordinateur/ architecture 
-#Date et evenement notable 
+#Augusta Ada King, comtesse de Lovelace (1815-1852)/ Alan Mathison Turing (1912-1954)/ John Von Neumann (1903-1957)
+#conçoit le premier langage informatique pour la machine à différences de Babbage/ 1936 construit mathématiquement la première machine universelle/ 1944 Architecture de von Neumann 
+#«Informatique», mot-valise né de la contraction des mots «Information» et «Automatique».
 
 #---------------------- I - Architecture materiel : ------------------------------------------------------------------------------------------------------------------------------
 
 # -I- HISTOIRE DES ORDINATEURS : --------------------------
+
+#Machines à programmes externes : Machines électroniques
+
+#Tubes à vide 1942 Premier ordinateur électro mécanique (non achevé),
+#utilisation de tubes à vide bien plus rapides que les machines électromécanique.
+
+#Colossus 1944 est une série de calculateurs électroniques fondés sur le système binaire. Le premier,
+#Colossus Mark 1, est construit en l’espace de onze mois et 
+#opérationnel en décembre 1943 constitué de 1 500, puis 2 400 tubes à vide,
+#il accomplissait 5 000 opérations par seconde. 
+#Il était utilisé pendant la Seconde Guerre mondiale pour la cryptanalyse du code Lorenz.
+
+#Machines à programmes enregistrés : 
+
+#ENIAC 1945 effectue descalculs balistiques à l’aide de ses 18000 tubes à vides.
+
 
 # -II- ARCHITECTURE DE VON NEUMAN : -----------------------
 
