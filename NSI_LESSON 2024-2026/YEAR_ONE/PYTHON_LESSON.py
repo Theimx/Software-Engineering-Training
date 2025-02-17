@@ -19,62 +19,65 @@ import math
 #«Informatique», mot-valise né de la contraction des mots «Information» et «Automatique».
 
 #---------------------- I - Architecture materiel : ------------------------------------------------------------------------------------------------------------------------------
+def COURS_Architecture_Materiel_I():
 
-# -I- HISTOIRE DES ORDINATEURS : --------------------------
+    # -I- HISTOIRE DES ORDINATEURS : --------------------------
 
-#Machines à programmes externes : Machines électroniques
+    #Machines à programmes externes : Machines électroniques
 
-#Tubes à vide 1942 Premier ordinateur électro mécanique (non achevé),
-#utilisation de tubes à vide bien plus rapides que les machines électromécanique.
+    #Tubes à vide 1942 Premier ordinateur électro mécanique (non achevé),
+    #utilisation de tubes à vide bien plus rapides que les machines électromécanique.
 
-#Colossus 1944 est une série de calculateurs électroniques fondés sur le système binaire. Le premier,
-#Colossus Mark 1, est construit en l’espace de onze mois et 
-#opérationnel en décembre 1943 constitué de 1 500, puis 2 400 tubes à vide,
-#il accomplissait 5 000 opérations par seconde. 
-#Il était utilisé pendant la Seconde Guerre mondiale pour la cryptanalyse du code Lorenz.
+    #Colossus 1944 est une série de calculateurs électroniques fondés sur le système binaire. Le premier,
+    #Colossus Mark 1, est construit en l’espace de onze mois et 
+    #opérationnel en décembre 1943 constitué de 1 500, puis 2 400 tubes à vide,
+    #il accomplissait 5 000 opérations par seconde. 
+    #Il était utilisé pendant la Seconde Guerre mondiale pour la cryptanalyse du code Lorenz.
 
-#Machines à programmes enregistrés : 
+    #Machines à programmes enregistrés : 
 
-#ENIAC 1945 effectue descalculs balistiques à l’aide de ses 18000 tubes à vides.
+    #ENIAC 1945 effectue descalculs balistiques à l’aide de ses 18000 tubes à vides.
 
 
-# -II- ARCHITECTURE DE VON NEUMAN : -----------------------
+    # -II- ARCHITECTURE DE VON NEUMAN : -----------------------
 
-#Les structures principales :
-#le CPU / La Mémoire / Les Bus (fils reliant les composant ) /Input Output
+    #Les structures principales :
+    #le CPU / La Mémoire / Les Bus (fils reliant les composant ) /Input Output
 
-# -III- MEMOIRE ET LANGUAGE MACHINE : ---------------------
+    # -III- MEMOIRE ET LANGUAGE MACHINE : ---------------------
 
-#L’organisation de la mémoire : 
-#Les types de mémoire : 
-#Les registres : 
-#Mémoires centrales et mémoire cache : 
-#Jeu d’instructions:
-#Nature des instructions : 
-#Assembleur : 
+    #L’organisation de la mémoire : 
+    #Les types de mémoire : 
+    #Les registres : 
+    #Mémoires centrales et mémoire cache : 
+    #Jeu d’instructions:
+    #Nature des instructions : 
+    #Assembleur : 
 
-# -IV- SYSTEME D'EXPLOITATION : ---------------------------
+    # -IV- SYSTEME D'EXPLOITATION : ---------------------------
 
-#Le système Linux : 
-#Le Bash : 
-
+    #Le système Linux : 
+    #Le Bash : 
+    return 0
 #---------------------- II - Language de Programmation : --------------------------------------------------------------------------------------------------------------------------
+def COURS_Language_de_Programmation_II():
 
+    return 0
 #---------------------- III - Representation des Données : ------------------------------------------------------------------------------------------------------------------------
+def COURS_Representation_des_Données_III():
+    #Conversion Binaire :
 
-#Conversion Binaire :
+    #Note : ob = Base Binaire 
+    #Note : od = Base décimal 
+    #Note : ox = Base Héxadécimal 
+    
+    #ASCII : American Standard Code for Information Interchange : créer en 1961. coder sur 7 bits 
+    #Unicode : codé sur 21 bits : +135 000 caractères différeznts 
 
-#Note : ob = Base Binaire 
-#Note : od = Base décimal 
-#Note : ox = Base Héxadécimal 
-
-#ASCII : American Standard Code for Information Interchange : créer en 1961. coder sur 7 bits 
-#Unicode : codé sur 21 bits : +135 000 caractères différeznts 
-
+    return 0
 #----------- Programmes de cours et exercices : --------------------------------------------------------------------------------------------------------------------------
-#----------- Nombre d'exercices : 15          : --------------------------------------------------------------------------------------------------------------------------
+#----------- Nombre d'exercices : 17          : --------------------------------------------------------------------------------------------------------------------------
 
-#Exo I : 
 #Une fonction pour calculer une moyenne Général avec plusieurs coeficients 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
 
@@ -91,13 +94,13 @@ def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
 
     return _bac
 
-#Une fonction pour calculer une moyenne de maths avec deux coeficients fixe
+#Une fonction pour calculer une moyenne de maths avec deux coeficients prédéfinis
 def moyenne_math2(_note1,_note2,_note3,_note4,_note5):
     _math = (((_note1+_note2+_note3) / 3) + ((_note4+_note4+_note5+_note5)) / 4) /2
 
     return _math
 
-#Une fonction pour appliquer la TVA sur un produit
+#Une fonction pour appliquer la TVA sur un produit à partir du prix de base et du % de la TVA
 def TVA(_prix,_tva):
     _newPrice = float(prix) * (1 + _tva/100)
 
@@ -125,8 +128,7 @@ def bach(_note):
     else : 
         print("non")
 
-#Exo II : 
-
+#Une fonction qui permet de determiner si l'utilisateur peut consommer de l'alcool grâce au structures conditionelles 
 def alcool():
 
     _enceinte = 0
@@ -150,8 +152,7 @@ def alcool():
     if _age >= 18 and _enceinte != "oui" :
         print("oui c'est bon")
         
-
-#Une fonction pour calculer la valeur d'une maison après 15 ans
+#Une fonction pour calculer l'évolution de la valeur d'une maison sur 15 ans
 def InflationMaison15():
     _prix_base = 206000
     _nb_années = 15
@@ -162,7 +163,7 @@ def InflationMaison15():
         _prix_base = _prix_base * _inflations
     return _prix_base
 
-#Une fonction pour calculer la valeur d'une maison après un certains nombre d'années n 
+#Une fonction pour calculer l'évolution de la valeur d'une maison après un certains nombre d'années
 def InflationMaison(_valeur, _année):
     _prix_base = _valeur
     _nb_années = _année
@@ -173,8 +174,7 @@ def InflationMaison(_valeur, _année):
         _prix_base = _prix_base * _inflations
     return _prix_base
 
-#exo IV : 
-
+#Une fonction qui retourne la longueur d'une chaine de caractère donnée
 def lenght(_chaine):
     _chaine = str(_chaine)
     _lenght = 0
@@ -184,17 +184,19 @@ def lenght(_chaine):
     return(_lenght)
 
 #exo cours 28/11/2024
-
+#Une fonction pour afficher tout les chiffres de 1 a 100
 def hundred():
     for i in range(101):
         print(i)
 
+#Une fonction pour afficher toute les secondes,minutes et heures d'une journée
 def hour():
     for b in range(24):
         for a in range(60):
             for i in range(60):
                 print("h",b,"m",a,"s",i)
 
+#Une fonction qui permet d'afficher tout les jours de la semaine sur une durée de 4 semaines
 def week():
     for a in range(4):
         for i in range(7):
@@ -214,8 +216,8 @@ def week():
                 print("jour", i+1, "semaine" ,a+1,"donc Vendredi")
 
 #Exo cours 4/12/2024 : Boucle Borné et non Borné
-
-def voyelledansmot(_mots):
+#Une fonction qui permet de detecter toute les voyelles d'une chaine de caractère fournis
+def voyelleDansMot(_mots):
 
     for i in _mots:
         if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" or i == "y" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U" or i == "Y":
@@ -225,6 +227,7 @@ def voyelledansmot(_mots):
 
     #faut parcourir des choses avec les boucles for
 
+#Une fonction qui permet de demander a un utilisateur de resoudre le calcul 5 fois 6 (exercice de cours)
 def tableMultiplication():
     _reponse = 0
     _chiffre1 = 5
@@ -233,6 +236,7 @@ def tableMultiplication():
         _reponse = int(input("combien fond 5 fois 6 ?"))
     print("gg")
 
+#Une fonction qui permet de se tester sur ses tables de multiplications
 def tableMultiplicationRandom():
     _rejouer = "oui"
 
@@ -244,7 +248,7 @@ def tableMultiplicationRandom():
         while _reponse != _chiffre1 * _chiffre2 : 
 
             _reponse = int(input(_question))
-        print("gg")
+        print("Bravo")
         _rejouer = input("Ecrivez oui si vous voulez rejouer : ")
 
 #Une fonction qui permet de créer un numéro de sécurité social unique a partir d'information entré par l'utilisateur.
@@ -292,9 +296,15 @@ def carteVitalBoucle():
     _result = 0
     return _result
 
+#Cette fonction devra permettre a partir d'un numéro de carte vital, d'en obtenir des informations
 def carteVitalAnalyse(_num):
     return 0
 
-#Ajouer une section pour les convention d'écriture :
+#A faire : 
+
+#Ajouer une section pour les convention d'écriture vu en cours:
 # les _underscore pour les variables interne au fonctions 
 # LaManièreDeNommerLesVariables
+
+#Ajouter une section qui liste chaque fonction du fichier (a la fin de celui ci)
+#avec des renseignements comme : Nom, paramètres, utilité, nombre de ligne dans la fonction.
