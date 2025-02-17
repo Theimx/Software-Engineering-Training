@@ -40,6 +40,9 @@ import math
 
 # -II- ARCHITECTURE DE VON NEUMAN : -----------------------
 
+#Les structures principales :
+#le CPU / La Mémoire / Les Bus (fils reliant les composant ) /Input Output
+
 # -III- MEMOIRE ET LANGUAGE MACHINE : ---------------------
 
 #L’organisation de la mémoire : 
@@ -72,7 +75,7 @@ import math
 #----------- Nombre d'exercices : 15          : --------------------------------------------------------------------------------------------------------------------------
 
 #Exo I : 
-
+#Une fonction pour calculer une moyenne Général avec plusieurs coeficients 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
 
     _moyenneG = 0
@@ -88,16 +91,19 @@ def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
 
     return _bac
 
+#Une fonction pour calculer une moyenne de maths avec deux coeficients fixe
 def moyenne_math2(_note1,_note2,_note3,_note4,_note5):
     _math = (((_note1+_note2+_note3) / 3) + ((_note4+_note4+_note5+_note5)) / 4) /2
 
     return _math
 
+#Une fonction pour appliquer la TVA sur un produit
 def TVA(_prix,_tva):
     _newPrice = float(prix) * (1 + _tva/100)
 
     return _newPrice
 
+#Une fonction pour connaitre son appréciation au Bac 
 def bach(_note):
     _Bac = float(note)
 
@@ -144,11 +150,22 @@ def alcool():
     if _age >= 18 and _enceinte != "oui" :
         print("oui c'est bon")
         
-#Exo III: 
 
-def maison():
+#Une fonction pour calculer la valeur d'une maison après 15 ans
+def InflationMaison15():
     _prix_base = 206000
     _nb_années = 15
+    _inflations = 1 + (3/100)
+
+    for i in range (_nb_années):
+        print(_prix_base * _inflations)   
+        _prix_base = _prix_base * _inflations
+    return _prix_base
+
+#Une fonction pour calculer la valeur d'une maison après un certains nombre d'années n 
+def InflationMaison(_valeur, _année):
+    _prix_base = _valeur
+    _nb_années = _année
     _inflations = 1 + (3/100)
 
     for i in range (_nb_années):
@@ -272,4 +289,3 @@ def cartevital():
 def cartevitalboucle(): 
     _result = 0
     return _result
-
