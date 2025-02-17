@@ -225,7 +225,7 @@ def voyelledansmot(_mots):
 
     #faut parcourir des choses avec les boucles for
 
-def tablemultiplication():
+def tableMultiplication():
     _reponse = 0
     _chiffre1 = 5
     _chiffre2 = 6
@@ -233,7 +233,7 @@ def tablemultiplication():
         _reponse = int(input("combien fond 5 fois 6 ?"))
     print("gg")
 
-def tablemultiplication():
+def tableMultiplicationRandom():
     _rejouer = "oui"
 
     while _rejouer == "oui":
@@ -247,7 +247,8 @@ def tablemultiplication():
         print("gg")
         _rejouer = input("Ecrivez oui si vous voulez rejouer : ")
 
-def cartevital():
+#Une fonction qui permet de créer un numéro de sécurité social unique a partir d'information entré par l'utilisateur.
+def carteVital():
     _sexe = int(input("entrez : 1 si vous êtes un Garçon ou 2  si vous êtes une fille : "))
 
     if _sexe == 1 or _sexe == 2 : 
@@ -285,7 +286,15 @@ def cartevital():
     else : 
         cartevital()
 
-#a refaire avec les boucles while 
-def cartevitalboucle(): 
+#A refaire avec les boucles while, Refaire une version optimisé de celle du dessus et coder La fonction 
+#inverse (A partir d'un numéro de carte, renvoyer une liste d'information deduis de celui ci.)
+def carteVitalBoucle(): 
     _result = 0
     return _result
+
+def carteVitalAnalyse(_num):
+    return 0
+
+#Ajouer une section pour les convention d'écriture :
+# les _underscore pour les variables interne au fonctions 
+# LaManièreDeNommerLesVariables
