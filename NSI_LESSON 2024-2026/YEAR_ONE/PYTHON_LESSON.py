@@ -21,6 +21,7 @@ import math
 #---------------------- I - Architecture materiel : ------------------------------------------------------------------------------------------------------------------------------
 def COURS_Architecture_Materiel_I():
 
+    chapitre_I_HISTOIRE_DES_ORDINATEURS = 0
     # -I- HISTOIRE DES ORDINATEURS : --------------------------
 
     #Machines à programmes externes : Machines électroniques
@@ -38,12 +39,25 @@ def COURS_Architecture_Materiel_I():
 
     #ENIAC 1945 effectue descalculs balistiques à l’aide de ses 18000 tubes à vides.
 
-
+    chapitre_II_ARCHITECTURE_DE_VON_NEUMAN = 0 
     # -II- ARCHITECTURE DE VON NEUMAN : -----------------------
 
     #Les structures principales :
     #le CPU / La Mémoire / Les Bus (fils reliant les composant ) /Input Output
 
+    #Un programme est enregistré dans la mémoire.
+    #Les échanges entre la mémoire et les registres du CPU se font via des bus, 
+    # selon une chronologie organisée par le contrôleur mémoire, en fonction du type d’échange 
+    # (données ou adresses).
+
+    #Le compteur de programme (CP) stocke l’adresse de l’instruction en cours, 
+    # tandis que le registre d’instruction (RI) contient sa valeur. 
+    # Les données du programme sont stockées dans les registres du banc de registres avant utilisation.
+
+    #L’UAL (ou ALU) réalise les opérations arithmétiques et logiques en traitant 
+    # les signaux électriques issus de ses circuits combinatoires.
+
+    chapitre_III_MEMOIRE_ET_LANGUAGE_MACHINE = 0
     # -III- MEMOIRE ET LANGUAGE MACHINE : ---------------------
 
     #L’organisation de la mémoire : 
@@ -54,6 +68,7 @@ def COURS_Architecture_Materiel_I():
     #Nature des instructions : 
     #Assembleur : 
 
+    chapitre_IV_SYSTEME_D_EXPLOITATION = 0
     # -IV- SYSTEME D'EXPLOITATION : ---------------------------
 
     #Le système Linux : 
@@ -298,6 +313,7 @@ def carteVitalBoucle():
 
 #Cette fonction devra permettre a partir d'un numéro de carte vital, d'en obtenir des informations
 def carteVitalAnalyse(_num):
+    _num = int(_num)
     return 0
 
 #A faire : 
