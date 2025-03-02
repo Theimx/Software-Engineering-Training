@@ -2,8 +2,8 @@ This is a personal file to group all my work on software engineering and Python 
 
 --- Statistiques ---
 
-Total ligne of code : 1224
+Total ligne of code : 1649
 
-Total Files : 30 
+Total Files : 36
 
-Python exercises : 37
+Python exercises : 65
