@@ -101,9 +101,9 @@ def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
     _moyenneG = _moyenneG + _note1 * _coef1
     _coefG += _coef1
     _moyenneG = _moyenneG + _note2 * _coef2 
-    _coefG += coef2 
+    _coefG += _coef2 
     _moyenneG = _moyenneG + _note3 * _coef3 
-    _coefG += coef3 
+    _coefG += _coef3 
 
     _bac = _moyenneG /_coefG
 
@@ -117,7 +117,7 @@ def moyenne_math2(_note1,_note2,_note3,_note4,_note5):
 
 #Une fonction pour appliquer la TVA sur un produit à partir du prix de base et du % de la TVA
 def TVA(_prix,_tva):
-    _newPrice = float(prix) * (1 + _tva/100)
+    _newPrice = float(_prix) * (1 + _tva/100)
 
     return _newPrice
 
@@ -146,11 +146,11 @@ def bach(_note):
 #Une fonction qui permet de determiner si l'utilisateur peut consommer de l'alcool grâce au structures conditionelles 
 def alcool():
 
-    _enceinte = 0
+    _enceinte = False
     _age = int(input("entrez votre age: "))
 
     _sexe_femme = input("si vous êtes une femme entrez : oui : ")
-    if _agesexe_femme == "oui":
+    if _sexe_femme == "oui":
         _sexe_femme = True
 
     if _sexe_femme == True:
@@ -164,7 +164,7 @@ def alcool():
 
     if _sexe_femme == True and _enceinte == True:
         print("non pas bon pour le bébé")
-    if _age >= 18 and _enceinte != "oui" :
+    if _age >= 18 and _enceinte != True :
         print("oui c'est bon")
         
 #Une fonction pour calculer l'évolution de la valeur d'une maison sur 15 ans
@@ -324,3 +324,4 @@ def carteVitalAnalyse(_num):
 
 #Ajouter une section qui liste chaque fonction du fichier (a la fin de celui ci)
 #avec des renseignements comme : Nom, paramètres, utilité, nombre de ligne dans la fonction.
+

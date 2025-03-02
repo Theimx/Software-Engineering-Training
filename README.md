@@ -1,8 +1,9 @@
 This is a personal file to group all my work on software engineering and Python (update the readme later)
 
-  ---     Statistiques     ---
+--- Statistiques ---
 
-  -  Nombre total de fichiers :  35
-  -  Nombre total de lignes :  1462
-  -  Nombre moyen de lignes par fichier :  40.94
-  -  Nombre Total d'exercice : 67
+Total ligne of code : 1224
+
+Total Files : 30 
+
+Python exercises : 37
