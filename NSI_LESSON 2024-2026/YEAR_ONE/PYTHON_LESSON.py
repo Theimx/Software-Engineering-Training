@@ -89,9 +89,15 @@ def COURS_Representation_des_Données_III():
     #ASCII : American Standard Code for Information Interchange : créer en 1961. coder sur 7 bits 
     #Unicode : codé sur 21 bits : +135 000 caractères différeznts 
 
-    # • La conjonction : notée « & », « ^ », « . » On le lit « Ou  »
-    # • La disjonction : notée « | », « v », « + » On le lit « Et »
-    # • La négation : notée « ~ », «—», « » On le lit « Non »   
+
+    # Table de vérité : 
+    # • La conjonction : notée « & », « ^ », « . » On le lit « AND / ET »
+    # • La disjonction : notée « | », « v », « + » On le lit « OR / OU »
+    # • La négation : notée « ~ », «—», « » On le lit « NOT / NON »   
+
+    #.Barre = + 
+    #+Barre = .
+    #Lois de De Morgan ABarre + B Barre = A . BBarre
 
     return 0
 #----------- Programmes de cours et exercices : --------------------------------------------------------------------------------------------------------------------------
