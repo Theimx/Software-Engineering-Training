@@ -94,14 +94,14 @@ def COURS_Representation_des_Données_III():
     # • La conjonction : notée « & », « ^ », « . » On le lit « AND / ET »
     # • La disjonction : notée « | », « v », « + » On le lit « OR / OU »
     # • La négation : notée « ~ », «—», « » On le lit « NOT / NON »   
-
+    # • La disjonction exclusif : XOR / OU EXCLUSIF
     #.Barre = + 
     #+Barre = .
     #Lois de De Morgan ABarre + B Barre = A . BBarre
 
     return 0
 #----------- Programmes de cours et exercices : --------------------------------------------------------------------------------------------------------------------------
-#----------- Nombre d'exercices : 17          : --------------------------------------------------------------------------------------------------------------------------
+#----------- Nombre d'exercices : 18          : --------------------------------------------------------------------------------------------------------------------------
 
 #Une fonction pour calculer une moyenne Général avec plusieurs coeficients 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
@@ -326,6 +326,14 @@ def carteVitalAnalyse(_num):
     _num = int(_num)
     return 0
 
+#Exercice de cours : Stocké le nom des élèves de la classe
+def NomClasse(_nbPerson):
+    _nbPerson = int(_nbPerson)
+    eleve = []
+    for i in range(_nbPerson):
+        eleve.append(input("Entre le nom des élèves : "))
+    return eleve
+
 #A faire : 
 
 #Ajouer une section pour les convention d'écriture vu en cours:
@@ -335,3 +343,15 @@ def carteVitalAnalyse(_num):
 #Ajouter une section qui liste chaque fonction du fichier (a la fin de celui ci)
 #avec des renseignements comme : Nom, paramètres, utilité, nombre de ligne dans la fonction.
 
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⢠⣄⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠄⠂⠉⢀⣀⠀⠀⠉⡀
+# ⠀⠀⠀⠀⠀⠀⢀⠀⠤⠀⠒⠀⠉⠀⠀⠀⠀⠀⡻⠋⢱⠀⠀⠇
+# ⠀⠀⡀⢀⠔⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠒⠁⢀⠞⠀
+# ⢸⠁⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠄⠀⠀⢀⠴⠃⠀⠀
+# ⠈⠑⠦⠀⠀⠀⠀⠀⠤⢀⠀⠀⠀⠀⡠⠂⠀⢀⠖⠁⠀⠀⠀⠀
+# ⢀⠤⠒⠈⠉⠉⠀⠒⠂⠠⠌⠢⣀⣰⠀⠀⠀⡊⠀⢀⣀⡀⠀⠀
+# ⠣⡀⠀⢀⡀⠀⠀⠀⠀⠀⠀⢀⣸⠝⣤⡀⠀⠀⠉⠀⠈⣧⠒⣢
+# ⠀⠈⠒⠤⠬⣉⣀⠀⠀⠀⠉⢀⣙⠛⠾⡀⠉⠐⠒⠀⠐⠛⠂⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠢⢌⣀⠉⠐⠚⠀⠀⠀⠀⠀⠀⠀⠀
+
+#end = " " supprimme le retour à la ligne
