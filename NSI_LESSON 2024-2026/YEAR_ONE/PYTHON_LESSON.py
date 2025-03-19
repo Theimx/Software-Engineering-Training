@@ -101,7 +101,7 @@ def COURS_Representation_des_Données_III():
 
     return 0
 #----------- Programmes de cours et exercices : --------------------------------------------------------------------------------------------------------------------------
-#----------- Nombre d'exercices : 18          : --------------------------------------------------------------------------------------------------------------------------
+#----------- Nombre d'exercices : 19          : --------------------------------------------------------------------------------------------------------------------------
 
 #Une fonction pour calculer une moyenne Général avec plusieurs coeficients 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
@@ -333,6 +333,26 @@ def NomClasse(_nbPerson):
     for i in range(_nbPerson):
         eleve.append(input("Entre le nom des élèves : "))
     return eleve
+
+#Exercice de cours : Afficher les signes du zodiac simplement 
+def Zodiac():
+    _signe = ["Belier","Taureau","Poisson","Sagitaire","Balance","Cancer","Cappricorne","Scorpion","Versau","Germea","Lion","Vierge"]
+    for i in _signe :
+        print(i)
+
+#Exercice du Devoir commun de spé NSI, la suite de Fibonacci
+def fib(n):
+    a = 0
+    b = 1
+    for i in range(1, n + 1):
+        if i % 2 != 0:
+            c = a + b
+            print(a)
+            a = c
+        else:
+            c = a + b
+            print(b)
+            b = c
 
 #A faire : 
 
