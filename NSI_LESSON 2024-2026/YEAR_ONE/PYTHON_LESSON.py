@@ -1,7 +1,6 @@
 import random
 import math
 
-#envoyer cadeau Cassie 
 
 # ------------    LES NOMBRES DE 1 A 20 DANS PLUSIEURS BASES : ---------------------------------------------------------------------------------------------------------
 #Base 2 (Binaire) : 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111, 0001 0000, 0001 0001, 0001 0010, 0001 0011
@@ -101,7 +100,7 @@ def COURS_Representation_des_Données_III():
 
     return 0
 #----------- Programmes de cours et exercices : --------------------------------------------------------------------------------------------------------------------------
-#----------- Nombre d'exercices : 19          : --------------------------------------------------------------------------------------------------------------------------
+#----------- Nombre d'exercices : 21          : --------------------------------------------------------------------------------------------------------------------------
 
 #Une fonction pour calculer une moyenne Général avec plusieurs coeficients 
 def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3):
@@ -354,15 +353,98 @@ def fib(n):
             print(b)
             b = c
 
+#Exercice cours liste : Faire la somme des eentier d'une liste donné
+def sommeEntierListe(l):
+    total = 0
+    for i in l:
+        total += i
+    return(total)
+
+#Detectez une occurence dans une liste sans la fonction count
+def occurence():
+    maListe = ["Soleil","Mordor","Citron","Arche","soleil","Grenouille","Livre","Citron"]
+    bufferList = maListe
+
+    for i, motListeA in enumerate(maListe):
+        for j, motListeB in enumerate(bufferList):
+            if i != j:
+                if motListeA == motListeB:
+                     return (True,motListeA )
+
+    return False
+
+#Difference entre A et a Table ASCII : 32
+#Detectez une occurence dans une liste sans la fonction count et sans difference entre Minuscule et Majuscule 
+def occurenceV2():
+
+    maListe = ["Soleil","Mordor","Citron","Arche","soleil","Grenouille","Livre","Citron"]
+    bufferList = maListe
+
+    for i, motListeA in enumerate(maListe):
+        for j, motListeB in enumerate(bufferList):
+            if i != j:
+                if str.lower(motListeA) == str.lower(motListeB):
+                     return (True,motListeA )
+
+    return False
+
+
+    # ça marchais pas 
+
+    # for i in range(len(maListe)):
+    #     for o in range(len(maListe)):
+
+    #         if i == o and  maListe.index(i) != maListe.index(o) : 
+                
+    #             return 1
+    # return 0
+
+#Une fonction qui fait la moyenne des éléments d'une liste 
+def MedianListe(l): 
+    total = 0
+    upper = 0
+    under = 0
+    underList = []
+    for i in l:
+        total += i
+        if i >= 9.99 : 
+            upper += 1
+        elif i < 10 :
+            under += 1
+            underList.append(i)
+    return( (total / len(l)),"Au dessus de 10 : " + str(upper), "En dessous de 10 : " + str(under),underList)
+
+#renvoie la plus Grande et la plus petite valeur d'une liste 
+def plusGrandPlusPetit(l):
+    under = l[0]
+    upper = l[0]
+    for i in l:
+        if i < under:
+            under = i
+        if i > upper: 
+            upper = i
+    return(under,upper)
+
+#detecter si une liste est un Palindrome ou non 
+def isPalindrome(maListe): 
+
+    for i in maListe:
+        if i == -i: 
+            print(i)
+# n -n 
+    return False
+maListeA = [1,3,4,5,4,3,1]
+maListeB = [1,5,4,3,1,3,4]  
+
+isPalindrome(maListeA)
 #A faire : 
 
-#Ajouer une section pour les convention d'écriture vu en cours:
+# Ajouter une section pour les convention d'écriture vu en cours:
 # les _underscore pour les variables interne au fonctions 
 # LaManièreDeNommerLesVariables
 
 #Ajouter une section qui liste chaque fonction du fichier (a la fin de celui ci)
 #avec des renseignements comme : Nom, paramètres, utilité, nombre de ligne dans la fonction.
-
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⢠⣄⠀⠀⠀
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠄⠂⠉⢀⣀⠀⠀⠉⡀
 # ⠀⠀⠀⠀⠀⠀⢀⠀⠤⠀⠒⠀⠉⠀⠀⠀⠀⠀⡻⠋⢱⠀⠀⠇
@@ -374,4 +456,12 @@ def fib(n):
 # ⠀⠈⠒⠤⠬⣉⣀⠀⠀⠀⠉⢀⣙⠛⠾⡀⠉⠐⠒⠀⠐⠛⠂⠀
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠢⢌⣀⠉⠐⠚⠀⠀⠀⠀⠀⠀⠀⠀
 
+# Fonction Integré dans Python : 
+
 #end = " " supprimme le retour à la ligne
+#enumerate = permet dans une boucle "for" d'obtenir : l'index de la valeur et la valeur  (0, seq[0]), (1, seq[1]), (2, seq[2])
+#str.lower() = Met tout une chaine de charactères en minuscule
+#str.upper = Met tout une chaine de charactères en majuscule 
+
+# Analiseur de fichier pour stats 
+# Ajouter une liste de noms de fichier pour en avoir des stats en +
