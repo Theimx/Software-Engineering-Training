@@ -153,6 +153,17 @@ print(median)
 
 #Exo 19 Chapitres 2, Entraînement: Course à trois jambes
 
+def former_equipes(): 
+    
+    nbParticipants = int(input())
+    listeP = []
+    for i in range(nbParticipants):
+        listeP.append(int(input()))
+
+    listeP.sort()
+    for i in range(nbParticipants // 2):
+        print(listeP[i], listeP[-(i + 1)])
+
 #Exo 20 Chapitres 2, Validation: Banquet municipal
 
 #Exo 21 Chapitres 2, Validation: Choix des emplacements
