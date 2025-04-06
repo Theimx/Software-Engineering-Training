@@ -444,18 +444,10 @@ def plusGrandPlusPetit(l):
             upper = i
     return(under,upper)
 
-#detecter si une liste est un Palindrome ou non 
-def isPalindrome(maListe): 
-    #utiliser le pas négatif de la boucle for 
-    for i in maListe:
-        if i == i[::-1]: 
-            print(i)
-    # n -n 
-    return False
-
-maListeA = [1,3,4,5,4,3,1]
-maListeB = [1,5,4,3,1,3,4]  
-isPalindrome(maListeA)
+#Exo de cours : detecter si une liste est un Palindrome ou non 
+#utiliser le pas négatif
+def isPalindrome(chaine):
+    return chaine == chaine[::-1]
 
 #A faire : 
 
