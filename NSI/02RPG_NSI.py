@@ -182,4 +182,4 @@ if joueur1["pv"] < joueur2["pv"]:
     print("Joueur 2 gagne")
     
 elif joueur1["pv"] > joueur2["pv"]:
-    print("Joueur 1 gagne")
+    print("Joueur 1 gagne") 
