@@ -68,9 +68,18 @@ def COURS_Architecture_Materiel_I():
 
     #III. L’organisation de la mémoire :
 
-    # - 1. Les types de mémoire : 
+    # - 1. Les types de mémoire : On parle de mémoire vive quand le contenu est perdu lorsque 
+    #      le courant est coupé :il s’agit des registres, des mémoires cache, de la mémoire centrale.
+    #      la ROM (Read Only Memory) qui, comme son nom l’indique, ne fonctionne en principe qu’en lecture seule.
+    #      Un registre est un emplacement mémoire interne au processeur pour stocker des opérandes
+    #      et des résultats intermédiaires lors des opérations effectuées dans l’UAL notamment.
+    #
+
     return 0
 
+def COURS_Language_de_Programmation_II():
+
+    return 0
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
