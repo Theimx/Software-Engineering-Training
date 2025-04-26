@@ -71,15 +71,22 @@ def COURS_Architecture_Materiel_I():
     # - 1. Les types de mémoire : On parle de mémoire vive quand le contenu est perdu lorsque 
     #      le courant est coupé :il s’agit des registres, des mémoires cache, de la mémoire centrale.
     #      la ROM (Read Only Memory) qui, comme son nom l’indique, ne fonctionne en principe qu’en lecture seule.
-    #      Un registre est un emplacement mémoire interne au processeur pour stocker des opérandes
+    # - 2. Un registre est un emplacement mémoire interne au processeur pour stocker des opérandes
     #      et des résultats intermédiaires lors des opérations effectuées dans l’UAL notamment.
-    #
+    #      À noter que la plupart des PC actuels ont des registres de taille 64 bits.
+    # - 3. Mémoires centrales et mémoire cache,La mémoire centrale est une mémoire volatile qui contient 
+    #      les programmes en cours et les données qu’ils manipulent.Elle est organisée en cellules qui
+    #      contiennent chacune une donnée ou une instruction repérées par un entier : une adresse mémoire.
+    #      Pour pouvoir adapter la très grande vitesse du processeur à celle plus faible de la mémoire centrale,
+    #      on place entre eux une mémoire plus rapide, la mémoire cache, qui contient les instructions et données
+    #      en cours d’utilisation car, la plupart du temps,les données qui viennent d’être utilisées ont une probabilité plus grande d’être réutilisées que d’autres.
 
     return 0
 
 def COURS_Language_de_Programmation_II():
 
     return 0
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -421,6 +428,34 @@ def isPalindrome(chaine):
 #  - cat   : Visualiser le contenu d’un fichier
 #  - echo  : Afficher un message ou le contenu d’une variable
 #  - touch : Réinitialiser le timestamp d’un fichier ou créer un fichier vide
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  Assembleur :
+
+# LDR R1,78      : Place la valeur stockée de la cellule mémoire 78 dans le registre R1
+# STR R3,125     : Place la valeur stockée du registre R3 dans la cellule mémoire 125
+# ADD R1,R0,#128 : Additionne la valeur « 128 » avec la valeur stockée de R0 et stocke le résultat dans le registre R1
+# ADD R0,R1,R2   : Additionne les valeurs stockées des registres R2 et R1 et stocke le résultat dans le registre R0
+# SUB R1,R0,#128 : Soustrait la valeur « 128 » avec la valeur stockée de R0 et stocke le résultat dans le registre R1
+# SUB R0,R1,R2   : Soustrait la valeur stockée du registre R2 avec la valeur du registre R1 et stocke le résultat dans le registre R0
+# MOV R1, #23    : Place la valeur « 23 » dans le registre R1
+# MOV R0, R3     : Place la valeur stockée du registre R3 dans le registre R0
+
+# CMP R0, #23    : Si la valeur stockée dans R0 est égale à « 23 » alors j’exécute ce qui se
+# BEQ repereA      trouve dans le label « repereA »
+
+# CMP R0, #23    : Si la valeur stockée dans R0 n’est pas égale à « 23 » alors j’exécute ce qui
+# BNE repereA      se trouve dans le label « repereA »
+
+# CMP R0, #23    : Si la valeur stockée dans R0 est plus grande que « 23 » alors j’exécute ce
+# BGT repereA      qui se trouve dans le label « repereA »
+
+# CMP R0, #23    : Si la valeur stockée dans R0 est plus petite que « 23 » alors j’exécute ce qui
+# BLT repereA      se trouve dans le label « repereA »
+
+# B repereA      : Passer directement à la partie du label « repereA » du programme
+# HALT           : Arrête l’exécution du programme
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #   Convention d'écriture : 
 #   Les variables dans les focntions : 
