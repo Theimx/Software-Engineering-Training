@@ -6,6 +6,7 @@
 # Programmer la fonction multiplication, prenant en paramètres deux nombres entiers relatifs n1 et 
 # n2, et qui renvoie le produit de ces deux nombres.
 # Les seules opérations autorisées sont l'addition et la soustraction.
+
 def multiplication(n1,n2):
     _res = 0
     
@@ -34,6 +35,7 @@ def multiplication(n1,n2):
 
 # Ecrire une fonction gb_vers_entier qui prend en paramètre un tel tableau et renvoie l'entier qu'il 
 # représente.
+
 def gb_vers_entier(tab):
     _result = 0
     count = len(tab)
@@ -50,6 +52,7 @@ def gb_vers_entier(tab):
 # représenté par une liste Python et qui renvoie un tuple (maxi, indices ) ou : 
 #  - maxi est le plus grand élémentdu tableau tab ;
 #  - indices est une liste Python contenant les indices du tableau tab ou apparait ce plus grand élément.
+
 def fonctionindices_maxi(tab):
     maxi = tab[0]
     indices = []
