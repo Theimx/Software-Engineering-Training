@@ -1,3 +1,6 @@
+# Evalutaion de NSI du 10/02/2025
+# Classe de 1 ere 
+# Note : 18/20
 import random
 
 # Proposer une fonction pour le jeux de la roulette

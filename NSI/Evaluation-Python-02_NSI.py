@@ -40,7 +40,7 @@ def gb_vers_entier(tab):
     _result = 0
     count = len(tab)
     for i in tab:
-        count -= 1
+        count -= 1  # Remplace l'utilisation d'indice négatif 
         if i == True:
             _result += 2**count
         
