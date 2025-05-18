@@ -5,7 +5,8 @@ AI : No AI used
   
 Description :  
 A personal file to group all my work on software engineering, mostly exercise answers.  
-  
+
+Content :  
 NSI_LESSON.py : 524  lignes  
 TP-01-DevineNombre_NSI.py : 61  lignes  
 TP-02-Foot_NSI.py : 70  lines  
