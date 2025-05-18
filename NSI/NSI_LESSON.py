@@ -436,6 +436,39 @@ def compr():
     # Affiche tout les carré entre 1 et 50 qui se finnisse pars 9
     compr3 = [i**2 for i in range(2,51) if (i**2) % 10 == 9 ]
     #print(compr3)
+    
+# Découper une grande chaîne en fragments de 5 caractères chacun. Rassemblez ces morceaux
+# dans l'ordre inverse. La chaîne doit pouvoir contenir des caractères accentués.
+
+def exo10_2(_chaine):
+    double = []
+    index = 0
+    index2 = 5
+    result = ""
+
+    for i in range((len(_chaine)//5) +1):
+
+        current_str = ""
+        current_str += _chaine[index:index2]
+        index += 5
+        index2 += 5
+        double.append(current_str)
+        
+    result = result.join(double[::-1])
+
+    return(result)
+
+def exo10_3(_chaine):
+    double = []
+    result = ""
+    for i in range(0, len(_chaine), 5):
+        current_str = _chaine[i:i+5]  
+        double.append(current_str)  
+
+    return result.join(double[::-1])
+    
+#print(exo10_2("Cette phrase seras mélangée"))
+#print(exo10_3("Cette phrase seras mélangée"))
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -5,7 +5,8 @@
 # Exercice 1 : 
 
 # Ecrire une fonction nb_mot qui détermine le nombre de mots dans une chaine de charactère,
-# renvoie 0 si le str est nul.
+# renvoie 0 si le str est nul. (détecte les " " et les "'")
+
 def nb_mot(_chaine): 
     if _chaine :
         total = 0 
@@ -22,6 +23,7 @@ def nb_mot(_chaine):
 # Ecrire une fonction Minmax qui prend une liste d'entier en paramètre et qui 
 # détermine le plus grand et le plus petit élément d'une liste. La fonction 
 # calcul aussi l'écart type entre le plus grand et le plus petit.
+
 def Minmax(tab):
     mini = tab[0]
     maxi = tab[0]
