@@ -466,9 +466,38 @@ def exo10_3(_chaine):
         double.append(current_str)  
 
     return result.join(double[::-1])
-    
+
 #print(exo10_2("Cette phrase seras mélangée"))
 #print(exo10_3("Cette phrase seras mélangée"))
+
+# Il est possible d’écrire un algorithme dans une fonction qui permet le renvoie de la moyenne
+# d’âge, arrondie à l’entier inférieur, d’une liste de personne.
+def Calcul_de_moyenne(tab):
+    result = 0
+    for i in range(len(tab)):
+        result += tab[i][1]
+
+    return(result//len(tab))
+#print(Calcul_de_moyenne([("Wiliam",16),("Yanis",18),("Mathéo",21),("Jean",42)]) )
+
+#Voici une fonction qui compte le nombre de personnes d’une liste qui ont plus de 18 ans (majeur).
+def majeur_test(tab): 
+    count = 0 
+    for i in range(len(tab)) : 
+        if tab[i][1] >= 18 :
+            count += 1 
+    return(count)
+#print(majeur_test([("Wiliam",16),("Yanis",18),("Mathéo",21),("Jean",42)]))
+
+def older(tab): 
+    count = ''
+    maxi = tab[0][1]
+    for i in range(len(tab)) : 
+        if tab[i][1] >= maxi :
+            count = tab[i][0]
+            maxi = tab[i][1]
+    return(count)
+#print(older([("Wiliam",16),("Yanis",18),("Mathéo",21),("Jean",42)]))
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -522,3 +551,9 @@ def exo10_3(_chaine):
 #   Convention d'écriture : 
 #   Les variables dans les focntions : 
 #   Les noms de variable : 
+
+# Complément à 1 : 
+# Complement à 2 :
+
+
+#(x-a)²+ (y-b)² = r²
