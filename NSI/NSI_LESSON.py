@@ -556,4 +556,3 @@ def older(tab):
 # Complement à 2 :
 
 
-#(x-a)²+ (y-b)² = r²
