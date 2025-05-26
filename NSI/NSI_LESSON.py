@@ -555,4 +555,3 @@ def older(tab):
 # Complément à 1 : 
 # Complement à 2 :
 
-
