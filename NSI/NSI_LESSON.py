@@ -499,6 +499,42 @@ def older(tab):
     return(count)
 #print(older([("Wiliam",16),("Yanis",18),("Mathéo",21),("Jean",42)]))
 
+def dicoto(tab,x):
+    if tab :
+        tab.sort()
+        indice = (len(tab)//2)
+        
+        while True:
+            if tab[indice] == x :
+                return True
+            elif tab[indice] > x :
+                indice = indice//2
+                
+            elif tab[indice] < x :
+                indice = (indice + len(tab))//2
+                
+    return False 
+
+testab = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] 
+testx = 9
+#print(dicoto(testab,testx))
+
+def correction(tab,x):
+    indD = 0
+    indF = len(tab) -1
+
+    while indD <= indF : 
+        ind_M =(indD + indF) // 2
+        MiD = tab[ind_M]
+        if MiD == x :
+            return True
+        elif MiD < x :
+            indD = ind_M +1
+        else:
+             indF = ind_M -1
+    return False
+#print(correction(testab,testx))
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
