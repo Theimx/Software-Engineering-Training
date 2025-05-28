@@ -535,6 +535,62 @@ def correction(tab,x):
     return False
 #print(correction(testab,testx))
 
+def  insertion(tab):
+    temp = 0
+
+    for i in range (len(tab)*4) :
+        
+        for i in range(len(tab)-1):
+            if tab[i] > tab[i+1]:
+                print("oui")
+                temp = tab[i+1]
+                tab[i+1] = tab[i]
+                tab[i] = temp
+
+     
+
+#testab = [100,90,40,79,48,10,173,478] 
+def insertion2(tab):
+    for i in range(1,len(tab)):
+        j = i
+        print("+ 1")
+        while j>0 and tab[j] < tab[j-1]:
+            tab[j],tab[j-1] = tab[j-1],tab[j]
+            j -= 1
+            print("+ 1")
+#insertion2(testab)
+#print(testab)   
+
+def selection(tab):
+    count = 0  
+    temp = 0
+    for j in tab:
+        if j <= mini:
+            mini = j
+    for i in range(0,len(tab)):
+        
+        for j in tab:
+            if j <= tab[count]:
+                mini = j
+
+        temp = tab[count]
+        tab[count] = mini
+        count += 1
+
+
+def correctionSelection(tab): 
+    for i in range(0,len(tab)-1):
+        Mini = i 
+        for j in range(i+1,len(tab)) :
+            if tab[j] < tab[Mini] :
+                Mini = j 
+        tab[i],tab[Mini] = tab[Mini],tab[i]
+
+# test = [100,90,40,79,48,10,173,478]
+# print(test)
+# print(correctionSelection(test))
+# print(test)
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -594,4 +650,9 @@ def correction(tab,x):
 # Signé :            1000 0010 0001 0111
 # Complément à 1 :   1111 1101 1110 1000
 # Complement à 2 :   1111 1101 1110 1001
-#☑☐ 
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Fiche pour le Bac NSI 2024-2026 :
+#   - Fiche sur l'Assembleur                             ☑
+#   - Fiche sur les bases binaires, décimal, héxadécimal ☐ 
+#   - Fiche sur la table ASCII                           ☐
