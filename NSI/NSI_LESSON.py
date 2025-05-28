@@ -588,6 +588,10 @@ def correction(tab,x):
 #   Les variables dans les focntions : 
 #   Les noms de variable : 
 
-# Complément à 1 : 
-# Complement à 2 :
-
+# Héxadécimal :     -217
+# Décimal :         -535
+# Binaire :         -0000 0010 0001 0111
+# Signé :            1000 0010 0001 0111
+# Complément à 1 :   1111 1101 1110 1000
+# Complement à 2 :   1111 1101 1110 1001
+#☑☐ 
