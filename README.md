@@ -21,4 +21,4 @@ FRANCE-IOI_EXERCICE-02.py : 230  lines
 --- Statistics ---  
 Total Files :  9  
 Total Lines :  1876
-
+   
