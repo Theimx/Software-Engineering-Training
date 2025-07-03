@@ -1,5 +1,5 @@
-# Exercices tiré du livre : Apprendre à programmer avec Python 3, 3 ème édition
-# écrit par Gérard Swinnen 
+# Liste des éxercices tiré du livre : Apprendre à programmer avec Python 3, 3 ème édition
+# Ecrit par Gérard Swinnen 
 # ISBN : 978-2-212-13434-6
-# nombre d'éxercices : 60
-# validé : 01/60  
+# Nombre d'éxercices : 60
+# Validé : 01/60  
