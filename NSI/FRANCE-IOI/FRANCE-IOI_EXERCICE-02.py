@@ -219,7 +219,15 @@ def exo21chap2():
 
 #Exo 24 Chapitres 3, Validation: Une ligne sur deux
 
+def exo24chap3():
+    count = int(input())
+    for i in range(count):
+        ligne = input()
+        if i % 2 == 0:
+            print(ligne)
+            
 #Exo 25 Chapitres 3, Découverte: Résumés de livres
+
 
 #Exo 26 Chapitres 3, Validation: Lire ou ne pas lire, telle est la question
 
