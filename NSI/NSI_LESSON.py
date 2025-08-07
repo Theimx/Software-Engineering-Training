@@ -593,7 +593,6 @@ def selection(tab):
         tab[count] = mini
         count += 1
 
-
 def correctionSelection(tab): 
     for i in range(0,len(tab)-1):
         Mini = i 

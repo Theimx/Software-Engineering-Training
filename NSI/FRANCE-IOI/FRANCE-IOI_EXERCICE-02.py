@@ -181,7 +181,37 @@ def exo19chap2():
 
 #Exo 20 Chapitres 2, Validation: Banquet municipal
 
+def exo20chap2():
+    nbPosition = int(input())
+    nbChange = int(input())
+
+    guest = []
+    for i in range(nbPosition):
+        guest.append(int(input()))
+    for i in range(nbChange):
+        a = int(input())
+        b = int(input())
+        c = guest[a]
+        guest[a] = guest[b]
+        guest[b] = c
+    
+    for i in guest:
+        print(i)
+
 #Exo 21 Chapitres 2, Validation: Choix des emplacements
+
+def exo21chap2():
+    nbEmplacements = int(input())
+    marchands = []
+
+    for i in range(nbEmplacements):
+        marchands.append(int(input()))
+
+    cur = 0
+    for i in marchands:
+        print(marchands.index(cur))
+        cur += 1
+
 
 #Exo 22 Chapitres 3, Découverte: Petites fiches et gros travail
 
