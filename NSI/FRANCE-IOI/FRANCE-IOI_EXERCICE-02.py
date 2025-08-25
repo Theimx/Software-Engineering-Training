@@ -215,6 +215,12 @@ def exo21chap2():
 
 #Exo 22 Chapitres 3, Découverte: Petites fiches et gros travail
 
+def exo22chap3():
+    for i in range(6):
+        name = input()
+        print(input())
+        print(name)
+
 #Exo 23 Chapitres 3, Découverte: Priorité alphabétique
 
 #Exo 24 Chapitres 3, Validation: Une ligne sur deux
@@ -228,14 +234,24 @@ def exo24chap3():
             
 #Exo 25 Chapitres 3, Découverte: Résumés de livres
 
-def exo25chap3():
-    for i in range(6):
-        name = input()
-        print(input())
-        print(name)
-        
 #Exo 26 Chapitres 3, Validation: Lire ou ne pas lire, telle est la question
 
+def exo26chap3():
+    nbLivres = int(input())
+    livres = []
+    final = []
+    for i in range(nbLivres):
+        livres.append(input())
+    count = len(livres[0])
+    final.append(livres[0])
+    for i in livres: 
+        
+        if len(i)>count:
+            final.append(i)
+            count = len(i)
+    for titre in final:
+        print(titre)
+        
 #Exo 27 Chapitres 3, Découverte: Fiches d’inscription
 
 #Exo 28 Chapitres 3, Validation: Analyse de fréquence
