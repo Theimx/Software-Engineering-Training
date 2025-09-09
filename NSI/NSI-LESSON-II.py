@@ -51,3 +51,36 @@ def insert(tab,a):
         tab_a[i+1] = a
         i = i + 1
     return tab_a
+
+# Epreuves Pratiques -BNS 2025- sujet n°48
+def recherche48(tab,n):
+    for i in range((len(tab)-1),0,-1): # Parcourirs la liste depuis la fin a la recherche 
+        print(i)                       # de notre  valeur et renvoier son indice.
+        if n == tab[i]:
+            return(i)
+
+def distance_carre48(point1,point2):
+    """ Calcule et renvoie la distance au carre entre 
+        deux points."""
+    return( (point1[0]-point2[0])**2 + (point1[1]-point2[1])**2 )
+
+def point_le_plus_proche48(depart,tab):
+    """ Renvoie les coordonnées du premier point du tableau tab se
+    trouvant à la plus courte distance du point depart."""
+    
+    min_point = tab[0]
+    min_dist = distance_carre48(tab[0],depart)
+    for i in range(1,len(tab)):
+        if distance_carre48(tab[i],depart) < min_dist : 
+            min_point = tab[i]
+            min_dist = distance_carre48(tab[i],depart)
+
+    return min_point
+
+# Epreuves Pratiques -BNS 2025- sujet n°27
+def verifie27(tab):
+    for i in range(1,len(tab)-1,1):
+        if tab[i-1] > tab[i]:
+            return False
+    return True
+
