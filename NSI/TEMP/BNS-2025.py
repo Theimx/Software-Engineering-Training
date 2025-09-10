@@ -97,12 +97,10 @@ def vainqueurs27(election):
     for candidat in election:
         if election[candidat] > nmax : 
             nmax = election[candidat]
-    liste_finale = [nom for nom in election if (election[candidat]==nmax)]
+    liste_finale = [nom for nom in election if (election[nom]==nmax)]
     
     return liste_finale
 
-print(depouille27(['A','B','C','A','B','A']))
-print(vainqueurs27(depouille27(['A','B','C','A','B','A'])))
 # Epreuves Pratiques -BNS 2025- sujet n°28
 
 # Epreuves Pratiques -BNS 2025- sujet n°29
