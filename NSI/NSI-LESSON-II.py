@@ -84,3 +84,27 @@ def verifie27(tab):
             return False
     return True
 
+def puissance_rec(x,n): # Vas créer une pile de multiplication en attente qui
+                        # se résoudront une fois le compteur n atteint en remontant
+                        # la pile avec x * 1 puis x * x ect en valeur de retour
+    if n == 0:
+        return 1
+    else : 
+        return x * puissance_rec(x,n-1)
+
+def puissance_rec_iterative(x,n): # complexité temporelle linéaire et 
+    r = 1                         # complexité  spacial constante
+    for i in range(n):
+        r = r * x
+    return r
+
+def exo1(n):
+    for i in range(1,n+1):
+        print(i)
+
+def exo1bis(n):
+    if n == 1 :
+        print(1)
+    else : 
+        exo1bis(n-1)
+        print(n)
