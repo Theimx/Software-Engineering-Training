@@ -98,13 +98,46 @@ def puissance_rec_iterative(x,n): # complexité temporelle linéaire et
         r = r * x
     return r
 
-def exo1(n):
+def Iter(n):
     for i in range(1,n+1):
         print(i)
 
-def exo1bis(n):
+def rec(n):
     if n == 1 :
         print(1)
     else : 
-        exo1bis(n-1)
+        rec(n-1)
         print(n)
+
+def factorielle_iter(n):
+    res = 1
+    for i in range(1,n+1):
+        res = res *i
+    return res
+
+def factorielle_recu(n):
+    if (n == 0) or (n == 1) :
+        return(1)
+    else : 
+        return n * factorielle_recu(n-1)
+
+def sumlist(tab):
+    total = 0
+    for i in tab:
+        total += i
+    return(total)
+
+def extrsousliste(tab,a,b):
+    if a < 0 : 
+        a = 0
+    if b > len(tab):
+        b = len(tab)
+    return [tab[i] for i in range(a,b)]
+    # Liste par comp remplace :
+    tab = []
+    # for i in range(a,b):
+    #     tab.append(tab[i])
+    # return tab
+
+def recSumList(tab):
+    
