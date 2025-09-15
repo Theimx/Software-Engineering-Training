@@ -134,10 +134,20 @@ def extrsousliste(tab,a,b):
         b = len(tab)
     return [tab[i] for i in range(a,b)]
     # Liste par comp remplace :
-    tab = []
+    # tab = []
     # for i in range(a,b):
     #     tab.append(tab[i])
     # return tab
 
 def recSumList(tab):
-    
+    if tab :
+        return tab[0] + recSumList(extrsousliste(tab,1,len(tab)-1))
+    return False
+
+def recSumList2(tab):
+    if tab : 
+        temp = tab.copy
+        x = temp.pop()
+        return recSumList2(temp) + x
+    return 0
+
