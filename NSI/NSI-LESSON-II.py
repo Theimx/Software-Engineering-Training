@@ -151,3 +151,10 @@ def recSumList2(tab):
         return recSumList2(temp) + x
     return 0
 
+def recFibonacci(n):
+
+    if (n == 1) or (n ==0):
+        return 1
+    else : 
+        return(recFibonacci(n-1) + recFibonacci(n-2))
+

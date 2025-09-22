@@ -353,11 +353,9 @@ def fib(n):
     for i in range(1, n + 1):
         if i % 2 != 0:
             c = a + b
-            print(a)
             a = c
         else:
             c = a + b
-            print(b)
             b = c
 
 #Exercice cours liste : Faire la somme des eentier d'une liste donné
