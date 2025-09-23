@@ -49,6 +49,42 @@ def insert13(tab,a):
 
 # Epreuves Pratiques -BNS 2025- sujet n°15
 
+def multiplication(n1,n2): 
+    res = 0
+    if n1 == 0 or n2 == 0:
+        return(0)
+    elif n1 > 0 and n2 > 0:
+        for i in range(n1):
+            res += n2
+        return(res)
+    elif n1 < 0 and n2 < 0:
+        n1 = -n1
+        for i in range(n1):
+            res += -n2
+        return(res)
+    elif (n1 < 0 and n2 > 0):
+        for i in range(-n1):
+            res += n2
+        return -res
+    elif (n1 > 0 and n2 < 0):
+        for i in range(-n2):
+            res += n1
+        return -res
+
+def chercher15(tab,x,i,j):
+    '''Renvoie l'indice de x dans tab, si x est dans tab,
+       None sinon.
+       On suppose que tab est trié dans l'ordre croissant. '''
+    if i > j:
+        return None 
+    m = (i + j) // 2
+    if tab[m] < x :
+        return chercher15(tab,x,m+1,j)
+    elif tab[m] > x:
+        return chercher15(tab,x,i,m-1)
+    else : 
+        return m 
+        
 # Epreuves Pratiques -BNS 2025- sujet n°16
 
 # Epreuves Pratiques -BNS 2025- sujet n°17
@@ -72,9 +108,9 @@ def dichotomie18(tab,x):
         if x == tab[m]:
             return True
         if x > tab[m]:
-            debut = m
+            debut = m+1
         else :
-            fin = m
+            fin = m-1
     return False
 
 # Epreuves Pratiques -BNS 2025- sujet n°19
