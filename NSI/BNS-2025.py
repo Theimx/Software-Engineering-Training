@@ -194,13 +194,14 @@ def affiche(dessin):
             else :
                 affichage = affichage + " "
         print(affichage)
+
 def liste_zoom(liste_depart,k):
     ''' renvoie une liste contenant k fois chaque élément de 
         liste_depart '''
-    liste_zoomee = ...
-    for elt in ... : 
+    liste_zoomee = []
+    for elt in range(len(liste_depart)) : 
         for i in range(k):
-            ...
+            liste_zoomee.append(liste_depart[elt])
     return liste_zoomee
 
 def dessin_zoom(grille,k):
@@ -208,9 +209,9 @@ def dessin_zoom(grille,k):
        ET répétées k fois'''
     grille_zoomee = []
     for ligne in grille:
-        ligne_zoomee = ...
+        ligne_zoomee = liste_zoom(ligne,k)
         for i in range(k):
-            ... .append(...)
+            grille_zoomee.append(ligne_zoomee)
     return grille_zoomee
 
 # Epreuves Pratiques -BNS 2025- sujet n°45
