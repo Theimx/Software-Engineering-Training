@@ -7,18 +7,23 @@ Description :
 A personal file to group all my work on software engineering, mostly exercise answers.  
 
 Content :  
-NSI_LESSON.py : 673  lines  
-TP-01-DevineNombre_NSI.py : 61  lines  
-TP-02-Foot_NSI.py : 70  lines  
-TP-03-RPG_NSI.py : 185  lines  
-Evaluation-Python-01_NSI.py : 110  lines  
-Evaluation-Python-02_NSI.py : 74  lines  
-Evaluation-Python-03_NSI.py : 37  lines  
+NSI-LESSON-I.py : 673  lines
+NSI-LESSON-II.py : 160  lines
 
-FRANCE-IOI_EXERCICE-01.py : 451  lines  
-FRANCE-IOI_EXERCICE-02.py : 289  lines  
+TP-01-DevineNombre-NSI.py : 61  lines
+TP-02-Foot-NSI.py : 70  lines
+TP-03-RPG-NSI.py : 185  lines
+
+Evaluation-Python-01-NSI.py : 110  lines
+Evaluation-Python-02-NSI.py : 74  lines
+Evaluation-Python-03-NSI.py : 37  lines
+
+BNS-2025.py : 305  lines
+
+FRANCE-IOI_EXERCICE-01.py : 451  lines
+FRANCE-IOI_EXERCICE-02.py : 289  lines
 
 --- Statistics ---  
-Total Files :  14  
-Total Lines :  2143
+Total Files :  16  
+Total Lines :  2608
    
