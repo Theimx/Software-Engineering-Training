@@ -158,3 +158,16 @@ def recFibonacci(n):
     else : 
         return(recFibonacci(n-1) + recFibonacci(n-2))
 
+def palindrome(txt):
+
+    if len(txt) < 2:
+        return True
+
+    taille = len(txt)
+    interieur = ""
+
+    for i in range(1,taille - 1):
+        interieur = interieur + txt[i]
+
+    return (txt[0] == txt[taille - 1] and (palindrome(interieur)))
+

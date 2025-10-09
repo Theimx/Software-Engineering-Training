@@ -24,11 +24,10 @@
 
 # Epreuves Pratiques -BNS 2025- sujet n°13
 def recherche13(elt : int,tab : list):
-    if tab : 
-        for i in range(len(tab)):
-            if tab[i] == elt:
-                return(i)
-    return()
+
+    for i in range(len(tab)):
+        if tab[i] == elt:
+            return(i)
 
 def insert13(tab,a):
     """ 
