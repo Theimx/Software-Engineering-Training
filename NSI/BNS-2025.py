@@ -116,6 +116,19 @@ def dichotomie18(tab,x):
 
 # Epreuves Pratiques -BNS 2025- sujet n°20
 
+def min_et_max(tab):
+    res = {
+        'min':tab[0],
+        'max':tab[0]
+    }
+
+    for i in tab: 
+        if i > res['max']:
+            res['max'] = i 
+        if i < res['min'] :
+            res['min'] = i 
+    return(res)
+
 # Epreuves Pratiques -BNS 2025- sujet n°21
 
 # Epreuves Pratiques -BNS 2025- sujet n°22
